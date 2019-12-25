@@ -18,7 +18,7 @@ AirtestスクリプトはPythonを使用する前提で開発されているた�
 ※Githubアカウントで登録可能
 
 - 起動画面  
-
+<img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_start.JPG"/>
 
 #### 2.デバイス接続
 
