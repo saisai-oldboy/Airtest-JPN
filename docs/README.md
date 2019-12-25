@@ -25,7 +25,7 @@ AirtestスクリプトはPythonを使用する前提で開発されているた�
 
 - **Android**
   - モバイルデバイスをUSBケーブルでPCと接続し、`設定`>`USBの設定` でモバイル側のUSB通信制限を解除してください
-  - モバイル側の開発オプションで **「USB デバッグ」** を有効にしてください（[Androidガイド](https://developer.android.com/studio/debug/dev-options.html#debugging)
+  - モバイル側の開発オプションで **「USB デバッグ」** を有効にしてください（[Androidガイド](https://developer.android.com/studio/debug/dev-options.html#debugging)）
   - `Device Screen` -> `Mobile Phone Connection` -> `接続済のデバイス`  
     - Android 9 の場合 `use javacap` を外しても問題ない
     - Android 10 の場合 `use javacap` に<span style="color:red;">必ずチェックを入れてください</span>  
