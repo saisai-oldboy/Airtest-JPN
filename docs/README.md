@@ -7,7 +7,9 @@
 ------
 ### クイックスタート
   
-AirtestスクリプトはPythonを使用する前提で開発されているため、使用前にPythonの基礎知識を習得しておいてください。
+- 共通
+  - Python 3.6.8 を[インストール](https://www.python.org/downloads/release/python-368/)する。Windowsの場合PATHを通してください
+  - MAC OS ≦ 10.15.2
 
 #### 1.インストール
 
