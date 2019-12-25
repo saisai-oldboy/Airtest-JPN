@@ -42,6 +42,6 @@ AirtestスクリプトはPythonを使用する前提で開発されているた�
       > git clone git@github.com:AirtestProject/iOS-Tagent.git
     - 2.XcodeでiOS-Tagentを開き、iPhoneをPCと接続してください
       > メニューから`product` -> `Scheme` -> `WebDriverAgentRunner` を選択  
-      > メニューから`product` -> `Destination` -> `*接続したiPhone*` を選択
+      > メニューから`product` -> `Destination` -> *`接続したiPhone`* を選択
     <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_iOSTagent.png"/>
 
