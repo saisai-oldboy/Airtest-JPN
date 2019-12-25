@@ -25,8 +25,9 @@ AirtestスクリプトはPythonを使用する前提で開発されているた�
 
 - **Android**
   - モバイルデバイスをUSBケーブルでPCと接続し、`設定`>`USBの設定` でモバイル側のUSB通信制限を解除してください
-  - モバイル側の開発オプションで **「USB デバッグ」** を有効にしてください（[Androidガイド](https://developer.android.com/studio/debug/dev-options.html#debugging)）
+  - モバイル側の開発オプションで **「USB デバッグ」** を有効にしてください（[Androidガイド](https://developer.android.com/studio/debug/dev-options.html#debugging)
 
-
+- **Windowsアプリ**
+   - 「Select Window」でWindowsアプリを選択する
 
 
