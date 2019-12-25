@@ -7,7 +7,13 @@ AirtestはNetEaseが開発した画像認識によるUI自動テストIDE
 - [AritestIDE 公式サイト](http://airtest.netease.com/)
 
 - [Github - AirtestProject](https://github.com/AirtestProject)
-
+  
+- オフィシャル資料（英語）
+  >[AritestIDE](http://airtest.netease.com/docs/en/index.html)
+  >[Aritest](https://airtest.readthedocs.io/en/latest/)
+  >[Poco](https://poco.readthedocs.io/en/latest/)
+  
+- [導入ガイド（日本語）]()
 
 ## 概要
 
@@ -16,10 +22,10 @@ AirtestはNetEaseが開発した画像認識によるUI自動テストIDE
 ![](https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/airtest_jp.png)
 #### 特徴
 - 自動化テストコード作成、メンテナンスのコストダウン
-  >スクリプト記録機能が内蔵されており、プログラミング出来ない人でも手軽にテストスクリプトを作成することができる
+  >スクリプト記録機能が内蔵されており、プログラミング出来ない人でも手軽にテストスクリプトを作成することができる  
   >IDEの導入、テスト実行とレポーティングは容易に行える
 - ゲーム自動化テスト
-  >主流なゲームエンジンをサポートするクロスプラットフォームで、モバイルゲームの自動化テストをより簡単にできる
+  >主流なゲームエンジンをサポートするクロスプラットフォームでモバイルゲームの自動化テストをより簡単にできる
 ## 自動化フレームワーク
 - [Airtest](https://airtest.readthedocs.io/en/latest/README_MORE.html)
   >Pythonで開発されたUIクロステストフレームワーク。画像認識技術を用いるため、ゲームやAPPの自動化テストに適応
