@@ -15,7 +15,7 @@ AirtestスクリプトはPythonを使用する前提で開発されているた�
   
 AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)してインストールする。
   
-途中でAirLabのログインモーダルが表示されるが、そのまま無視して問題ない。起動する度にモーダルが表示されが、表示をなくしたい場合は[AirLab](https://airlab.163.com/)に登録する。  
+途中でAirLabのログインモーダルが表示されるが、そのまま無視して問題ない。起動する度にモーダルが表示されるので、表示をなくしたい場合は[AirLab](https://airlab.163.com/)に登録する。  
 ※Githubアカウントで登録可能
 
 - 起動画面  
