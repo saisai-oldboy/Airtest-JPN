@@ -19,12 +19,12 @@ AirtestはNetEaseが開発した画像認識によるUI自動テストIDE
   >スクリプト記録機能が内蔵されており、プログラミング出来ない人でも手軽にテストスクリプトを作成することができる
   >IDEの導入、テスト実行とレポーティングは容易に行える
 - ゲーム自動化テスト
-  >主流なゲームエンジンをサポートするクロスプラットフォームで、モバイルゲームの自動化テストをより簡単に
-## テストフレームワーク
+  >主流なゲームエンジンをサポートするクロスプラットフォームで、モバイルゲームの自動化テストをより簡単にできる
+## 自動化フレームワーク
 - [Airtest](https://airtest.readthedocs.io/en/latest/README_MORE.html)
-  >
+  >Pythonで開発されたUIクロステストフレームワーク。画像認識技術を用いるため、ゲームやAPPの自動化テストに適応
 - [Poco](https://poco-chinese.readthedocs.io/en/latest/source/README.html)
-
+  >UI要素検索用テストフレームワーク。Android、iOS以外、ゲームとHTML5アプリをサポートしている
 #### 対応環境
 
 | プラットフォーム                 | Airtest                        | Poco                                                                                                    |
@@ -37,6 +37,9 @@ AirtestはNetEaseが開発した画像認識によるUI自動テストIDE
 | Unity3D                   | √                              | √ [integration doc](https://poco-chinese.readthedocs.io/en/latest/source/doc/integration.html#unity3d)         |
 | Other engines             | √                              | √ [implementation doc](https://poco-chinese.readthedocs.io/en/latest/source/doc/implementation_guide.html)        |
 
+#### WEB自動化テスト
+
+[Airtest-Selenium](http://airtest.netease.com/docs/en/1_quick_start/5_get_started_with_web_test.html?highlight=selenium)がIDEに内蔵されており、現在(2019/12)Chromeのみサポートしている
 
 #### 対応デバイス一覧（2019/12時点）
 | No. | デバイス                          | 備考 |
@@ -182,8 +185,8 @@ AirtestはNetEaseが開発した画像認識によるUI自動テストIDE
 | 139  | Google Pixel 4       |      |
 
 #### 対応エミュレーター（2019/12時点）
-| No. | エミュレーター                          | 備考 |
+| No. | エミュレーター                          |
 |------|----------------------------------|------|
-| 1    | iTools           |      |
-| 2    | BlueStacks          |      |
-| 3    | AVD          |      |
+| 1    | iTools           |
+| 2    | BlueStacks          |
+| 3    | AVD          |
