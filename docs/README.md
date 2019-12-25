@@ -13,7 +13,7 @@ AirtestスクリプトはPythonを使用する前提で開発されているた�
 
 <img src="http://airtest.netease.com/static/img/icon/48x48.png" width = "20" height = "20"/> **AirtestIDE**
   
-[ダウンロード](http://airtest.netease.com/changelog.html)してインストールする。
+AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)してインストールする。
   
 途中でAirLabのログインモーダルが表示されるが、そのまま無視して問題ない。起動する度にモーダルが表示されが、表示をなくしたい場合は[AirLab](https://airlab.163.com/)に登録する。  
 ※Githubアカウントで登録可能
