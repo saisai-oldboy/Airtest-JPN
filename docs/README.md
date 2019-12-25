@@ -28,7 +28,7 @@ AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)し�
   - モバイル側の開発オプションで **「USB デバッグ」** を有効にしてください（[Androidガイド](https://developer.android.com/studio/debug/dev-options.html#debugging)）
   - `Device Screen` -> `Mobile Phone Connection` -> `接続済のデバイス`  
     - Android 9 の場合 `use javacap` を外しても問題ない
-    - Android 10 の場合 `use javacap` に<font style="color:red;">必ずチェックを入れてください</font>  
+    - Android 10 の場合 `use javacap` に **`必ずチェック`** を入れてください 
     ※v1.2.2の場合、ADBのみで接続するとエラーになる
     <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_android_connect.gif"/>
     <br/>
