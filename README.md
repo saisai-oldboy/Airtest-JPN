@@ -33,7 +33,7 @@ AirtestはNetEaseが開発した画像認識によるUI自動テストIDE
   >UI要素検索用テストフレームワーク。Android、iOS以外、ゲームとHTML5アプリをサポートしている
 
 #### WEB自動化テスト
-- Seleniumサポート
+- Seleniumサポート  
   [Airtest-Selenium](http://airtest.netease.com/docs/en/1_quick_start/5_get_started_with_web_test.html?highlight=selenium)がIDEに内蔵されており、現在(2019/12)Chromeのみサポートしている
 
 #### 対応環境
