@@ -10,7 +10,7 @@ AirtestスクリプトはPythonを使用する前提で開発されているた�
 
 #### 1.インストール
 
-<img src="http://airtest.netease.com/static/img/icon/48x48.png" width = "50" height = "50"/> **AirtestIDE**
+<img src="http://airtest.netease.com/static/img/icon/48x48.png" width = "20" height = "20"/> **AirtestIDE**
   
 [ダウンロード](http://airtest.netease.com/changelog.html)してインストールする。
   
