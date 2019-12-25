@@ -20,8 +20,7 @@ AirtestスクリプトはPythonを使用する前提で開発されているた�
 
 - 起動画面  
 <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_start.JPG"/>
-<br/> 
-
+  
 #### 2.デバイス接続
 
 - **Android**
@@ -35,7 +34,7 @@ AirtestスクリプトはPythonを使用する前提で開発されているた�
     <br/>
 - **Windowsアプリ**
    - 「Select Window」また「Search Window」でWindowsアプリを選択する  
-<br/>
+  
 - **iOS　β版**
   - Xcodeインストール済のMAC PCを予め用意する
   - iOS-Tagentをインストール
