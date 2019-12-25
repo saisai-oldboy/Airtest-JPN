@@ -29,7 +29,7 @@ AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)し�
   - `Device Screen` -> `Mobile Phone Connection` -> `接続済のデバイス`  
     - Android 9 の場合 `use javacap` を外しても問題ない
     - Android 10 の場合 `use javacap` に<span style="color:red;">必ずチェックを入れてください</span>  
-    ※v1.2.2はADBのみで接続エラーとなる
+    ※v1.2.2の場合、ADBのみで接続するとエラーになる
     <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_android_connect.gif"/>
     <br/>
 - **Windowsアプリ**
