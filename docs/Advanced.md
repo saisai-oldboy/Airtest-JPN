@@ -25,6 +25,18 @@
 ---
 ### 環境構築
 ---
+- Airtestフレームワークをインストール
+  >pip install -U airtest
+
+  Mac/Linuxの場合、手動での権限付与が必要
+  >#Mac
+  >cd {your_python_path}/site-packages/airtest/core/android/static/adb/mac
+
+  >#Linux
+  >cd {your_python_path}/site-packages/airtest/core/android/static/adb/linux
+
+- Pocoフレームワークをインストール
+  >pip install -U pocoui
 
 - 最新の[ADB(Android Debug Bridge)](https://developer.android.com/studio/releases/platform-tools.html)をダウンロードして解凍する。  
   *`AirtestIDEのインストール場所`*`/airtest/core/android/static/adb/` にある`adb`ファイルを全て置き換える  
