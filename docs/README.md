@@ -59,7 +59,7 @@ AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)し�
 
 - レコーディング機能を使って記録する方法：  
   [AirtestIDE公式ドキュメント](http://airtest.netease.com/docs/docs_AirtestIDE-en_US/1_online_help/airtest_intro.html#recording-airtest-script-in-airtestide)  
-  レコーディング例：(from 公式サイト)
+  レコーディング例（from 公式サイト）：
   - 自動レコーディング  
     <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/airtest_auto_record.gif"/> 
   - マニュアルレコーディング  
