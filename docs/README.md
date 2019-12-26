@@ -58,7 +58,7 @@ AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)し�
       > メニューから`product` -> `Destination` -> *`接続したiPhone`* を選択  
          
       > メニューから`product` -> `Test` を選択し、正常に起動することを確認  
-      <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_Xcode.png"  width = "350" />
+      <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_Xcode.png"  width = "400" />
         
       ```
       2019-12-26 16:16:39.047184+0900 WebDriverAgentRunner-Runner[380:60778] Running tests...
