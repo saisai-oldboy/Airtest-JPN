@@ -68,7 +68,7 @@ AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)し�
       t =     0.00s Start Test at 2019-12-26 16:16:41.096
       t =     0.00s Set Up
       ```
-  - iPhone側で`設定` -> `一般` -> `プロフィルとデバイス管理` -> `iOS-Tagent` を有効にする。  
+  - iPhone側で`設定` -> `一般` -> `プロフィルとデバイス管理` -> `WebDriverAgent` を有効にする。  
     <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_iPhoneprofile.png" width="30%"/>  
 
   - iproxyをインストールする。  
