@@ -56,5 +56,5 @@ AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)し�
 
 #### 4.最初のテストを作る
 
-- レコーディング機能を使って記録する方法
-  [AirtestIDE公式ドキュメントを参考](http://airtest.netease.com/docs/docs_AirtestIDE-en_US/1_online_help/airtest_intro.html#camera_icon.png)
+- レコーディング機能を使って記録する方法：  
+  [AirtestIDE公式ドキュメントを参考](http://airtest.netease.com/docs/docs_AirtestIDE-en_US/1_online_help/airtest_intro.html#recording-airtest-script-in-airtestide)
