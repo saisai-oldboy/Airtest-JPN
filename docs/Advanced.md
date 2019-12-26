@@ -16,7 +16,7 @@
 
 - `Show Real-time Cursor Coordinate` -> `デバイス上の座標を表示`
 - `Relative Coordinate` -> `デバイス上の（相対）座標を表示`
-- `Auto Complete` -> `自動補完` ※IDEの性能が落ちるので、チェックを外すほうがいい
+- `Auto Complete` -> `自動補完` ※IDEの性能が落ちるので、チェックを外したほうがいい
 - `Default Log Path` -> `テスト結果の格納場所`
 - **`Custom Python Path` -> `事前にインストールしたPython 3.6.xの場所`**
 - `Chrome Path` -> `Chromeのインストール場所`
