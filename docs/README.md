@@ -58,7 +58,7 @@ AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)し�
       > メニューから`product` -> `Destination` -> *`接続したiPhone`* を選択  
          
       > メニューから`product` -> `Test` を選択し、正常に起動することを確認  
-      <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_Xcode.png"/>
+      <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_Xcode.png"  width = "200" />
         
       ```
       Test Suite 'All tests' started at 2017-01-23 15:49:12.585
