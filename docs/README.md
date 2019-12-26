@@ -9,6 +9,10 @@
   
 - 事前準備　共通
   - [Python 3.6.8](https://www.python.org/downloads/release/python-368/) をインストールしておく。Windowsの場合PATHを通す。
+  - 最新の[ADB(Android Debug Bridge)](https://developer.android.com/studio/releases/platform-tools.html)をダウンロードして解凍する。
+  *`インストール場所`*`/airtest/core/android/static/adb/` にある`adb`ファイルを置き換える
+  例:Windowsの場合
+  <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_start.JPG"/>
   - [Git](https://git-scm.com/)をインストールしておく
 
 #### 1.インストール
