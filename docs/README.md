@@ -18,6 +18,7 @@
   例：Windowsの場合  
   <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_ADB.JPG"/>
 - [Git](https://git-scm.com/)をインストールしておく
+- [Homebrew](https://brew.sh/index_ja)をインストールしておく
 
 #### 2.インストール
 
@@ -51,10 +52,23 @@ AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)し�
     - 1.iOS-TagentをPCにダウンロード
       > git clone git@github.com:AirtestProject/iOS-Tagent.git
     - 2.XcodeでiOS-Tagentを開き、iPhoneをPCと接続する
-      > メニューから`product` -> `Scheme` -> `WebDriverAgentRunner` を選択  
-      > メニューから`product` -> `Destination` -> *`接続したiPhone`* を選択
-    <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_iOSTagent.png"/>
+      > メニューから`product` -> `Scheme` -> `WebDriverAgentRunner` を選択
 
+      > メニューから`product` -> `Destination` -> *`接続したiPhone`* を選択  
+      <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_iOSTagent.png"/>  
+
+      > メニューから`product` -> `Test` を選択し、正常に起動することを確認
+      ```
+      Test Suite 'All tests' started at 2017-01-23 15:49:12.585
+      Test Suite 'WebDriverAgentRunner.xctest' started at 2017-01-23 15:49:12.586
+      Test Suite 'UITestingUITests' started at 2017-01-23 15:49:12.587
+      Test Case '-[UITestingUITests testRunner]' started.
+      t =     0.00s     Start Test at 2017-01-23 15:49:12.588
+      t =     0.00s     Set Up
+      ```
+  - iproxyをインストールする
+    `$ brew install libimobiledevice`
+  - iproxyを起動する
 #### 4.最初のテストを作る
 
 - レコーディング機能を使って記録する方法：  
