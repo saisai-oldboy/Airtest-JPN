@@ -53,10 +53,10 @@ AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)し�
       > git clone git@github.com:AirtestProject/iOS-Tagent.git
     - 2.XcodeでiOS-Tagentを開き、iPhoneをPCと接続する
       > メニューから`product` -> `Scheme` -> `WebDriverAgentRunner` を選択
-
-      > メニューから`product` -> `Destination` -> *`接続したiPhone`* を選択  
       <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_iOSTagent.png"/>  
 
+      > メニューから`product` -> `Destination` -> *`接続したiPhone`* を選択  
+       
       > メニューから`product` -> `Test` を選択し、正常に起動することを確認
       ```
       Test Suite 'All tests' started at 2017-01-23 15:49:12.585
