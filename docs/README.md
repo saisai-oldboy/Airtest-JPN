@@ -5,22 +5,19 @@
 - [クイックスタート](https://github.com/saisai-dan-shift/Airtest/tree/master/docs#%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88)
 - [応用編]()
 
----
-
-### クイックスタート
+### 事前準備
   
-#### 1.事前準備　共通
 - [Python 3.6.8](https://www.python.org/downloads/release/python-368/) をインストールしておく。Windowsの場合PATHを通す。  
   他のバージョンでの動きが不安定なので、できるだけPython 3.6.Xを使用してください（2019/12時点）
 - [Java(JDK)](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)をダウンロードしてインストールする
-- 最新の[ADB(Android Debug Bridge)](https://developer.android.com/studio/releases/platform-tools.html)をダウンロードして解凍する。
-  *`インストール場所`*`/airtest/core/android/static/adb/` にある`adb`ファイルを置き換える  
-  例：Windowsの場合  
-  <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_ADB.JPG"/>
 - [Git](https://git-scm.com/)をインストールしておく
-- [Homebrew](https://brew.sh/index_ja)をインストールしておく。**※ MAC OSのみ**
+- [Homebrew](https://brew.sh/index_ja)をインストールしておく。**※ MacOSのみ**
 
-#### 2.インストール
+---
+### クイックスタート
+---
+
+#### 1.インストール
 
 <img src="http://airtest.netease.com/static/img/icon/48x48.png" width = "20" height = "20"/> **AirtestIDE**
   
@@ -32,7 +29,7 @@ AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)し�
 - 起動画面  
 <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_start.JPG"/>
   
-#### 3.デバイス接続
+#### 2.デバイス接続
 
 - **Android**
   - モバイルデバイスをUSBケーブルでPCと接続し、`設定`>`USBの設定` でモバイル側のUSB通信制限を解除する
@@ -84,7 +81,7 @@ AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)し�
   - AirtestIDEで接続  
     <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_Airtest_iOS.gif"/>  
    
-#### 4.最初のテストを作る
+#### 3.最初のテストを作る
 
 - レコーディング機能を使って記録する方法：  
   [AirtestIDE公式ドキュメント](http://airtest.netease.com/docs/docs_AirtestIDE-en_US/1_online_help/airtest_intro.html#recording-airtest-script-in-airtestide)  
