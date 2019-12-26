@@ -51,13 +51,14 @@ AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)し�
   - iOS-Tagentをインストール
     - 1.iOS-TagentをPCにダウンロード
       > git clone git@github.com:AirtestProject/iOS-Tagent.git
-    - 2.XcodeでiOS-Tagentを開き、iPhoneをPCと接続する
+    - 2.XcodeでiOS-Tagentを開き、iPhoneをPCと接続しDeveloperモードが有効になっていることを確認
+      <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_iPhoneDev.png"/>   
       > メニューから`product` -> `Scheme` -> `WebDriverAgentRunner` を選択
       <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_iOSTagent.png"/>  
 
       > メニューから`product` -> `Destination` -> *`接続したiPhone`* を選択  
          
-      > メニューから`product` -> `Test` を選択し、正常に起動することを確認  
+      > メニューから`product` -> `Test` を選択し、正常に起動することを確認する。  
       <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_Xcode.png"  width = "400" />
         
       ```
@@ -69,6 +70,9 @@ AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)し�
       t =     0.00s Start Test at 2019-12-26 16:16:41.096
       t =     0.00s Set Up
       ```
+  - iPhone側で`設定` -> `一般` -> `プロフィルとデバイス管理` -> `iOS-Tagent` を有効にする  
+    <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_iPhoneprofile.png"/>  
+
   - iproxyをインストールする  
     `$ brew install libimobiledevice`
 
