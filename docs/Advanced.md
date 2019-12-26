@@ -29,10 +29,10 @@
   >pip install -U airtest
 
   Mac/Linuxの場合、手動での権限付与が必要
-  >#Mac
+  >#Mac  
   >cd {your_python_path}/site-packages/airtest/core/android/static/adb/mac
 
-  >#Linux
+  >#Linux  
   >cd {your_python_path}/site-packages/airtest/core/android/static/adb/linux
 
 - Pocoフレームワークをインストール
