@@ -69,7 +69,7 @@ AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)し�
   - iproxyをインストールする  
     `$ brew install libimobiledevice`
 
-  - iproxyを起動する
+  - iproxyを起動する  
     `$ iproxy 8100 8100`
 
   - ブラウザを起動して http://127.0.0.1:8100/inspectorにアクセスしてiPhoneの画面が映し出されていることを確認
