@@ -18,7 +18,7 @@
   例：Windowsの場合  
   <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_ADB.JPG"/>
 - [Git](https://git-scm.com/)をインストールしておく
-- [Homebrew](https://brew.sh/index_ja)をインストールしておく **MAC OSのみ**
+- [Homebrew](https://brew.sh/index_ja)をインストールしておく。**※ MAC OSのみ**
 
 #### 2.インストール
 
