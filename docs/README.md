@@ -9,7 +9,7 @@
 ### クイックスタート
   
 #### 1.事前準備　共通
-- [Python 3.6.8](https://www.python.org/downloads/release/python-368/) をインストールしておく。Windowsの場合PATHを通す。
+- [Python 3.6.8](https://www.python.org/downloads/release/python-368/) をインストールしておく。Windowsの場合PATHを通す。  
   他のバージョンと連携する際の動きが不安定なので、できるだけPython 3.6.Xを使用してください（2019/12時点）
 - 最新の[ADB(Android Debug Bridge)](https://developer.android.com/studio/releases/platform-tools.html)をダウンロードして解凍する。
   *`インストール場所`*`/airtest/core/android/static/adb/` にある`adb`ファイルを置き換える  
