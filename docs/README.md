@@ -1,8 +1,9 @@
 # Airtest導入ガイド
 
-- AirtestIDE V1.2.2 (2019/12)
-  
-- AirtestスクリプトはPythonを使用する前提で開発されているため、使用前に[Pythonの基礎知識](https://docs.python.org/ja/3.6/tutorial/index.html)を習得しておくことがおすすめ  
+- 対象：AirtestIDE V1.2.2 (2019/12)
+- AirtestスクリプトはPythonを使用する前提で開発されているため、使用前に[Pythonの基礎知識](https://docs.python.org/ja/3.6/tutorial/index.html)を習得しておくことがおすすめ
+- [クイックスタート](https://github.com/saisai-dan-shift/Airtest/tree/master/docs#%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88)
+- [応用編]()
 
 ---
 
@@ -57,4 +58,9 @@ AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)し�
 #### 4.最初のテストを作る
 
 - レコーディング機能を使って記録する方法：  
-  [AirtestIDE公式ドキュメントを参考](http://airtest.netease.com/docs/docs_AirtestIDE-en_US/1_online_help/airtest_intro.html#recording-airtest-script-in-airtestide)
+  [AirtestIDE公式ドキュメント](http://airtest.netease.com/docs/docs_AirtestIDE-en_US/1_online_help/airtest_intro.html#recording-airtest-script-in-airtestide)  
+  レコーディング例：(from 公式サイト)
+  - 自動レコーディング  
+    <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/airtest_auto_record.gif"/> 
+  - マニュアルレコーディング  
+    <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/airtest_manual_record.gif"/>
