@@ -53,12 +53,12 @@ AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)し�
       > git clone git@github.com:AirtestProject/iOS-Tagent.git
     - 2.XcodeでiOS-Tagentを開き、iPhoneのDeveloperモードが有効になっていることを確認
       <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_iPhoneDev.png" width="30%"/>   
-      > メニューから`product` -> `Scheme` -> `WebDriverAgentRunner` を選択
+      > Xcodeメニューから`product` -> `Scheme` -> `WebDriverAgentRunner` を選択
       <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_iOSTagent.png"/>  
 
-      > メニューから`product` -> `Destination` -> *`接続したiPhone`* を選択  
+      > Xcodeメニューから`product` -> `Destination` -> *`接続したiPhone`* を選択  
          
-      > メニューから`product` -> `Test` を選択し、正常に起動することを確認する。  
+      > Xcodeメニューから`product` -> `Test` を選択し、正常に起動することを確認する。  
       <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_Xcode.png"  width = "400" />
         
       ```
