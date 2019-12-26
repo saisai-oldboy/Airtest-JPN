@@ -2,9 +2,10 @@
 
 - AirtestIDE V1.2.2 (2019/12)
   
-**AirtestスクリプトはPythonを使用する前提で開発されているため、使用前に[Pythonの基礎知識](https://docs.python.org/ja/3.6/tutorial/index.html)を習得しておいてください**  
+- AirtestスクリプトはPythonを使用する前提で開発されているため、使用前に[Pythonの基礎知識](https://docs.python.org/ja/3.6/tutorial/index.html)を習得しておくことをおすすめ  
 
-------
+---
+
 ### クイックスタート
   
 - 事前準備　共通
