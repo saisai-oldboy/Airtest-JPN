@@ -61,12 +61,13 @@ AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)し�
       <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_Xcode.png"  width = "350" />
         
       ```
-      Test Suite 'All tests' started at 2017-01-23 15:49:12.585
-      Test Suite 'WebDriverAgentRunner.xctest' started at 2017-01-23 15:49:12.586
-      Test Suite 'UITestingUITests' started at 2017-01-23 15:49:12.587
+      2019-12-26 16:16:39.047184+0900 WebDriverAgentRunner-Runner[380:60778] Running tests...
+      Test Suite 'All tests' started at 2019-12-26 16:16:41.095
+      Test Suite 'WebDriverAgentRunner.xctest' started at 2019-12-26 16:16:41.095
+      Test Suite 'UITestingUITests' started at 2019-12-26 16:16:41.095
       Test Case '-[UITestingUITests testRunner]' started.
-      t =     0.00s     Start Test at 2017-01-23 15:49:12.588
-      t =     0.00s     Set Up
+      t =     0.00s Start Test at 2019-12-26 16:16:41.096
+      t =     0.00s Set Up
       ```
   - iproxyをインストールする  
     `$ brew install libimobiledevice`
