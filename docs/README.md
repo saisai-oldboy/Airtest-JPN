@@ -10,7 +10,8 @@
   
 #### 1.事前準備　共通
 - [Python 3.6.8](https://www.python.org/downloads/release/python-368/) をインストールしておく。Windowsの場合PATHを通す。  
-  他のバージョンと連携する際の動きが不安定なので、できるだけPython 3.6.Xを使用してください（2019/12時点）
+  他のバージョンでの動きが不安定なので、できるだけPython 3.6.Xを使用してください（2019/12時点）
+- [Java(JDK)](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)をダウンロードしてインストールする
 - 最新の[ADB(Android Debug Bridge)](https://developer.android.com/studio/releases/platform-tools.html)をダウンロードして解凍する。
   *`インストール場所`*`/airtest/core/android/static/adb/` にある`adb`ファイルを置き換える  
   例：Windowsの場合  
@@ -53,3 +54,7 @@ AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)し�
       > メニューから`product` -> `Destination` -> *`接続したiPhone`* を選択
     <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_iOSTagent.png"/>
 
+#### 4.最初のテストを作る
+
+- レコーディング機能を使って記録する方法
+  [AirtestIDE公式ドキュメントを参考](http://airtest.netease.com/docs/docs_AirtestIDE-en_US/1_online_help/airtest_intro.html#camera_icon.png)
