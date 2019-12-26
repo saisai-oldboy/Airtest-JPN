@@ -7,9 +7,9 @@
 ------
 ### クイックスタート
   
-- 共通
-  - Python 3.6.8 を[インストール](https://www.python.org/downloads/release/python-368/)する。Windowsの場合PATHを通してください
-  - MAC OS ≦ 10.15.2
+- 事前準備　共通
+  - [Python 3.6.8](https://www.python.org/downloads/release/python-368/) をインストールしておく。Windowsの場合PATHを通す。
+  - [Git](https://git-scm.com/)をインストールしておく
 
 #### 1.インストール
 
