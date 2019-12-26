@@ -36,7 +36,7 @@ AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)し�
 
 - **Android**
   - モバイルデバイスをUSBケーブルでPCと接続し、`設定`>`USBの設定` でモバイル側のUSB通信制限を解除する
-  - モバイル側の開発オプションで **「USB デバッグ」** を有効する（[Androidガイド](https://developer.android.com/studio/debug/dev-options.html#debugging)）
+  - モバイル側の開発オプションで **「USB デバッグ」** を有効にする（[Androidガイド](https://developer.android.com/studio/debug/dev-options.html#debugging)）
   - `Device Screen` -> `Mobile Phone Connection` -> `接続済のデバイス`  
     - Android 9 の場合 `use javacap` を外しても問題ない
     - Android 10 の場合 `use javacap` に **`必ずチェック`** を入れてください  
@@ -66,9 +66,16 @@ AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)し�
       t =     0.00s     Start Test at 2017-01-23 15:49:12.588
       t =     0.00s     Set Up
       ```
-  - iproxyをインストールする
+  - iproxyをインストールする  
     `$ brew install libimobiledevice`
+
   - iproxyを起動する
+    `$ iproxy 8100 8100`
+
+  - ブラウザを起動して http://127.0.0.1:8100/inspectorにアクセスしてiPhoneの画面が映し出されていることを確認
+
+  - AirtestIDEで接続する
+   
 #### 4.最初のテストを作る
 
 - レコーディング機能を使って記録する方法：  
