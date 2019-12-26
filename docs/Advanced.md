@@ -15,11 +15,28 @@
 - **`Custom Python Path` -> `事前にインストールしたPython 3.6.xの場所`**
 - `Chrome Path` -> `Chromeのインストール場所`
   <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/A_Settings.JPG"/>
+
 ---
-### 環境設定
+### 環境構築
 ---
 
 - 最新の[ADB(Android Debug Bridge)](https://developer.android.com/studio/releases/platform-tools.html)をダウンロードして解凍する。  
-  *`AirtestIDEのインストール場所`*`/airtest/core/android/static/adb/` にある`adb`ファイルを置き換える  
+  *`AirtestIDEのインストール場所`*`/airtest/core/android/static/adb/` にある`adb`ファイルを全て置き換える  
   例：Windowsの場合  
   <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_ADB.JPG"/>
+
+---
+### スクリプト作成
+---
+
+---
+### レポーティング
+---
+
+---
+### スクリプト作成
+---
+
+---
+### カスタマイズ
+---
