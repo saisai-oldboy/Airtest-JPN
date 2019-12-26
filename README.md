@@ -26,6 +26,7 @@ AirtestはNetEaseが開発した画像認識によるUI自動テストIDE
   >IDEの導入、テスト実行とレポーティングは容易に行える
 - ゲーム自動化テスト
   >主流なゲームエンジンをサポートしながら、モバイルゲームの自動化テストをより簡単にできるクロスプラットフォーム
+---
 ## 自動化フレームワーク
 - [Airtest](https://airtest.readthedocs.io/en/latest/README_MORE.html)
   >Pythonで開発されたUIクロステストフレームワーク。画像認識技術を用いるため、ゲームやAPPの自動化テストに適応している
@@ -47,8 +48,6 @@ AirtestはNetEaseが開発した画像認識によるUI自動テストIDE
 | Cocos2dx-js & Cocos2dx-lua| √                              | √ [integration doc](https://poco.readthedocs.io/en/latest/source/doc/integration.html#cocos2dx-lua)            |
 | Unity3D                   | √                              | √ [integration doc](https://poco-chinese.readthedocs.io/en/latest/source/doc/integration.html#unity3d)         |
 | Other engines             | √                              | √ [implementation doc](https://poco-chinese.readthedocs.io/en/latest/source/doc/implementation_guide.html)        |
-
-
 
 #### 対応デバイス一覧（2019/12時点）
 | No. | デバイス                          | 備考 |
