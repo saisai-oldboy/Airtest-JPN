@@ -8,15 +8,15 @@
 
 ### クイックスタート
   
-- 事前準備　共通
-  - [Python 3.6.8](https://www.python.org/downloads/release/python-368/) をインストールしておく。Windowsの場合PATHを通す。
-  - 最新の[ADB(Android Debug Bridge)](https://developer.android.com/studio/releases/platform-tools.html)をダウンロードして解凍する。
+#### 1.事前準備　共通
+- [Python 3.6.8](https://www.python.org/downloads/release/python-368/) をインストールしておく。Windowsの場合PATHを通す。
+- 最新の[ADB(Android Debug Bridge)](https://developer.android.com/studio/releases/platform-tools.html)をダウンロードして解凍する。
   *`インストール場所`*`/airtest/core/android/static/adb/` にある`adb`ファイルを置き換える  
-    例:Windowsの場合  
-    <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_ADB.JPG"/>
-  - [Git](https://git-scm.com/)をインストールしておく
+  例:Windowsの場合  
+  <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_ADB.JPG"/>
+- [Git](https://git-scm.com/)をインストールしておく
 
-#### 1.インストール
+#### 2.インストール
 
 <img src="http://airtest.netease.com/static/img/icon/48x48.png" width = "20" height = "20"/> **AirtestIDE**
   
@@ -28,7 +28,7 @@ AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)し�
 - 起動画面  
 <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_start.JPG"/>
   
-#### 2.デバイス接続
+#### 3.デバイス接続
 
 - **Android**
   - モバイルデバイスをUSBケーブルでPCと接続し、`設定`>`USBの設定` でモバイル側のUSB通信制限を解除してください
