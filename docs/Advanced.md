@@ -43,7 +43,7 @@ IDEの「File」また「＋」から`.air`また`.py`を選択して新規ス�
   <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/A_insertimg.JPG"/>  
   対象オブジェクトを繰り返し検出する際に役立つ  
 
-- 画像認識の設定
+- 画像認識の設定  
   画像をダブルクリックしてImage Editorを開き、`Snapshot Recognition`を押すと現在の表示画面で対象オブジェクトの画像認識を確認できる。 
   - threshold(浮動小数点型)  
 　  画像認識の閾値を設定する。範囲：`[0.0, 1.0]`　デフォルト：`[0.6]`  
