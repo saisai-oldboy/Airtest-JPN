@@ -54,8 +54,10 @@ IDEの「File」また「＋」から`.air`また`.py`を選択して新規ス�
     画像認識でRGBレイヤーを使用する。デフォルト：`Flase`（輝度レイヤーのみ使用）  
   <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/A_ocr_setting.gif"/>
 <br/>
+
 - スクリプト作成例
 オフィシャルサイトを参照してください 
+
 ---
 ### 環境構築
 ---
