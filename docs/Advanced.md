@@ -40,7 +40,7 @@ IDEの「File」また「＋」から`.air`また`.py`を選択して新規ス�
 |snapshot |	        |                 |
 
 - キャプチャの挿入  
-  <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/A_insertimg.JPG"/>
+  <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/A_insertimg.JPG"/>  
   対象オブジェクトを繰り返し検出する際に役立つ
 <br/>
 - 画像認識の設定
