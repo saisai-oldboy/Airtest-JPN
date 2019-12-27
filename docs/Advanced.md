@@ -21,7 +21,40 @@
 - **`Custom Python Path` -> `Python 3.6.x実行ファイルの場所`**
 - `Chrome Path` -> `Chrome実行ファイルの場所`
   <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/A_Settings.JPG"/>
+---
+### スクリプト
+---
+- 新規作成
 
+IDEの「File」また「＋」から`.air`また`.py`を選択して新規スクリプトを作る  
+<img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/A_new.gif"/>
+
+- Airtestアシスタント  
+
+| 操作系 | 補助      | アサーション |
+|--------|---------|--------|
+|touch	 |text	    |assert_exists
+|swipe	 |keyevent	|assert_not_exists
+|wait	 |sleep	    |assert_equal
+|exist	 |	        |assert_not_equal
+|snapshot |	        |
+
+- キャプチャの挿入  
+  <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/A_insertimg.JPG"/>
+  対象オブジェクトを繰り返し検出する際に役立つ
+<br/>
+- 画像認識の設定
+  Image Editorを開き、`Snapshot Recognition`を押すと現在の表示画面で対象オブジェクトの画像認識を確認できる。 
+  - threshold(浮動小数点型)  
+　  画像認識の閾値を設定する。範囲：`[0.0, 1.0]`　デフォルト：`[0.6]`  
+  - target_pos(整数型)  
+　  対象画像の操作範囲を指定する。範囲：`[1, 9]`　デフォルト：`[5]`  
+    <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/A_target_pos.png"/>
+  - rgb(bool型)
+    画像認識でRGBレイヤーを使用する。デフォルト：`Flase`（輝度レイヤーのみ使用）  
+<br/>
+- スクリプト作成例
+オフィシャルサイトを参照してください 
 ---
 ### 環境構築
 ---
@@ -35,19 +68,27 @@
   >cd {your_python_path}/site-packages/airtest/core/android/static/adb/linux
 
   >chmod +x adb
+  
+  エラー対策：  
+    - `cv2`モジュール`ImportError: DLL load failed`エラー 
+      [最新版AirtestIDE](http://airtest.netease.com/changelog.html)をダウンロードして解凍する。`api-ms-win-downlevel-shlwapi-l1-1-0.dll`と`IEShims.dll`2つのファイルを`C:\Windows\System32`にコピーする。
+    - win.py実行時`import win32api`の`DLL load failed`エラー  
+      pywin32を再インストールする。  
+      >pip uninstall pywin32
+      >pip install pywin32==223
+
 
 - Pocoフレームワークをインストールする。
   >pip install -U pocoui
 
-- ADBの更新  
+- ADBを更新しておく  
   最新の[ADB(Android Debug Bridge)](https://developer.android.com/studio/releases/platform-tools.html)をダウンロードして解凍する。  
   *`AirtestIDEのインストール場所`*`/airtest/core/android/static/adb/` にある`adb`ファイルを全て置き換える  
   例：Windows SDKの場合  
   <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_ADB.JPG"/>
 
----
-### スクリプト作成
----
+
+
 
 ---
 ### レポーティング
