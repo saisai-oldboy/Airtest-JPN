@@ -33,11 +33,11 @@ IDEの「File」また「＋」から`.air`また`.py`を選択して新規ス�
 
 | 操作系 | 補助      | アサーション |
 |--------|---------|--------|
-|touch	 |text	    |assert_exists
-|swipe	 |keyevent	|assert_not_exists
-|wait	 |sleep	    |assert_equal
-|exist	 |	        |assert_not_equal
-|snapshot |	        |
+|touch	 |text	    |assert_exists    |
+|swipe	 |keyevent	|assert_not_exists|
+|wait	 |sleep	    |assert_equal     |
+|exist	 |	        |assert_not_equal |
+|snapshot |	        |                 |
 
 - キャプチャの挿入  
   <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/A_insertimg.JPG"/>
@@ -52,6 +52,7 @@ IDEの「File」また「＋」から`.air`また`.py`を選択して新規ス�
     <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/A_target_pos.png"/>
   - rgb(bool型)
     画像認識でRGBレイヤーを使用する。デフォルト：`Flase`（輝度レイヤーのみ使用）  
+  <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/A_ocr_setting.gif"/>
 <br/>
 - スクリプト作成例
 オフィシャルサイトを参照してください 
