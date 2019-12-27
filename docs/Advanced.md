@@ -50,11 +50,11 @@ IDEの「File」また「＋」から`.air`また`.py`を選択して新規ス�
   - target_pos(整数型)  
 　  対象画像の操作範囲を指定する。範囲：`[1, 9]`　デフォルト：`[5]`  
     <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/A_target_pos.png"/>
-  - rgb(bool型)
+  - rgb(bool型)  
     画像認識でRGBレイヤーを使用する。デフォルト：`Flase`（輝度レイヤーのみ使用）  
   <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/A_ocr_setting.gif"/>  
 
-- スクリプト作成例
+- スクリプト作成例  
 オフィシャルサイトを参照してください 
 
 ---
