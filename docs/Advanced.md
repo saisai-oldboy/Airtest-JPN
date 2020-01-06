@@ -22,7 +22,7 @@
 - `Chrome Path` -> `Chrome実行ファイルの場所`
   <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/A_Settings.JPG"/>
 ---
-### スクリプト
+### スクリプト作成
 ---
 - 新規作成
 
@@ -54,8 +54,20 @@ IDEの「File」また「＋」から`.air`また`.py`を選択して新規ス�
     画像認識でRGBレイヤーを使用する。デフォルト：`Flase`（輝度レイヤーのみ使用）  
   <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/A_ocr_setting.gif"/>  
 
-- スクリプト作成例  
-オフィシャルサイトを参照してください 
+- Poco UIツリー  
+  
+  プラットフォーム別[Pocoの導入方法](https://poco.readthedocs.io/zh_CN/latest/source/doc/poco_drivers.html)  
+  AirtestIDEのPocoアシスタントから対象のプラットフォームを選択すれば要素を検索できる。また 
+  <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/"/> 
+
+
+
+
+
+
+
+
+
 
 ---
 ### 環境構築
