@@ -95,7 +95,7 @@ IDEの「File」また「＋」から`.air`また`.py`を選択して新規ス�
 - Pocoフレームワークをインストールする。
   >pip install -U pocoui
 
-- ADBを更新しておく  
+- ADBを更新しておいたほうがいい  
   最新の[ADB(Android Debug Bridge)](https://developer.android.com/studio/releases/platform-tools.html)をダウンロードして解凍する。  
   *`AirtestIDEのインストール場所`*`/airtest/core/android/static/adb/` にある`adb`ファイルを全て置き換える  
   例：Windows SDKの場合  
