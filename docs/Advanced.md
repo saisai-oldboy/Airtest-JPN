@@ -111,7 +111,22 @@ IDEの「File」また「＋」から`.air`また`.py`を選択して新規ス�
 - adb port：デフォルトは5037
 - serialno：androidのシリアルナンバー  
 
+運用例は以下の通り
 
+>#指定なしの場合は最初のデバイスに接続
+>Android:///
+>#シリアルナンバーが79d03faのデバイスをデフォルトIP:Portで接続する
+>Android://127.0.0.1:5037/79d03fa
+>#adb connectでリモート接続する。※シリアルナンバーの代わりに10.254.60.1:5555を使用
+>Android://127.0.0.1:5037/10.254.60.1:5555
+>#window handleが123456のWindowsフォームに接続する
+>Windows:///123456
+>#windowタイトルを正規表現で指定し、Windowsフォームに接続する
+>Windows:///?title_re=Unity.*
+>#windowsのdesktopに接続
+>Windows:///
+>#iOSデバイスに接続する
+>iOS:///127.0.0.1:8100
 
 ---
 ### レポーティング
