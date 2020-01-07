@@ -6,6 +6,7 @@
 複雑な自動化テストを実現するには`Airtest`、`Poco`と`Pythonライブラリ`の連携が必要。また、オリジナルPythonライブラリを導入することによって高機能なテストケースを作ることができる。
 * [IDE設定](https://github.com/saisai-dan-shift/Airtest/blob/master/docs/Advanced.md#ide%E8%A8%AD%E5%AE%9A)
 * [環境構築](https://github.com/saisai-dan-shift/Airtest/blob/master/docs/Advanced.md#%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89)
+* [Pythonコマンドで実行]()
 * [スクリプト作成](https://github.com/saisai-dan-shift/Airtest/blob/master/docs/Advanced.md#%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E4%BD%9C%E6%88%90)
 * [レポーティング](https://github.com/saisai-dan-shift/Airtest/blob/master/docs/Advanced.md#%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0)
 * [カスタマイズ](https://github.com/saisai-dan-shift/Airtest/blob/master/docs/Advanced.md#%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA)
@@ -57,17 +58,8 @@ IDEの「File」また「＋」から`.air`また`.py`を選択して新規ス�
 - Poco UIツリー  
   
   プラットフォーム別[Pocoの導入方法](https://poco.readthedocs.io/zh_CN/latest/source/doc/poco_drivers.html)  
-  AirtestIDEのPocoアシスタントから対象のプラットフォームを選択すれば要素を検索できる。また 
+  AirtestIDEのPocoアシスタントから対象のプラットフォームを選択すれば要素を一覧表示・検索できる。さらに`poco Inspector`を使えば対象オブジェクトを簡単に見けられる。ツリーから対象オブジェクトをダブルクリックすればソースに追加できる。
   <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/"/> 
-
-
-
-
-
-
-
-
-
 
 ---
 ### 環境構築
@@ -101,6 +93,23 @@ IDEの「File」また「＋」から`.air`また`.py`を選択して新規ス�
   例：Windows SDKの場合  
   <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_ADB.JPG"/>
 
+
+### Pythonコマンドで実行
+
+コマンド例：
+>airtest run untitled.air --device Android:///デバイス番号 --log log/
+>python -m airtest run untitled.air --device Android:///デバイス番号 --log log/
+
+- `airtest run` 実行スクリプト 
+- --device デバイス番号
+- --log指定 ログファイル保存場所
+  
+デバイス番号の定義：
+>Android://<adbhost[localhost]>:<adbport[5037]>/<serialno>
+
+- adbhost：adb serverのIPアドレス。デフォルトは127.0.0.1
+- adb port：デフォルトは5037
+- serialno：androidのシリアルナンバー  
 
 
 
