@@ -96,7 +96,7 @@ IDEの「File」また「＋」から`.air`また`.py`を選択して新規ス�
 ### Pythonコマンドで実行
 ---
 
-コマンド例：
+#### コマンド例：
 >airtest run untitled.air --device Android:///デバイス番号 --log log/
 >python -m airtest run untitled.air --device Android:///デバイス番号 --log log/
 
@@ -104,14 +104,14 @@ IDEの「File」また「＋」から`.air`また`.py`を選択して新規ス�
 - --device デバイス番号
 - --log指定 ログファイル保存場所
   
-デバイス番号の定義：
+#### デバイス番号の定義：
 >Android://<adbhost[localhost]>:<adbport[5037]>/<serialno>
 
 - adbhost：adb serverのIPアドレス。デフォルトは127.0.0.1
 - adb port：デフォルトは5037
 - serialno：androidのシリアルナンバー  
 
-デバイス番号指定の例：
+#### デバイス番号指定の例：
 >#指定なしの場合は最初のデバイスに接続  
 >Android:///  
 
@@ -133,7 +133,7 @@ IDEの「File」また「＋」から`.air`また`.py`を選択して新規ス�
 >#iOSデバイスに接続する  
 >iOS:///127.0.0.1:8100  
 
-接続オプション  
+##### 接続オプション 
 デバイスによってIDEで接続する際に`use ADB orientation`また`use javacap`のチェックが必須となる。コマンド実行時も同様。  
 >#例：`Use javacap`の場合  
 >Android://127.0.0.1:5037/127.0.0.1:7555?cap_method=JAVACAP  
@@ -141,10 +141,10 @@ IDEの「File」また「＋」から`.air`また`.py`を選択して新規ス�
 >#複数項目を使う場合は`&&`を使う  
 >Android://127.0.0.1:5037/79d03fa?cap_method=JAVACAP&&ori_method=ADBORI&&touch_method=ADBTOUCH  
 
-実行画面の録画
+##### 実行画面の録画
 オプション`--recording`で実行すれば、`recording_0.mp4`のようなmp4ファイルが自動的に生成され、レポーティングの時はデフォルトのHTMLに取り込まれる  
 
-複数デバイスの実行（Androidのみ）
+#### 複数デバイスの実行（Androidのみ）
 **複数デバイスで1つのスクリプト**を同時実行するでなく、**1つのスクリプトで複数のデバイス**を使う場合である。例えば、SNSアプリでお互いに友たち承認する場合など、デバイス間の連携が必要なときには有効な手段となる。  
   
 方法：`set_current `で簡単にデバイスの切り替えられる。  
@@ -154,14 +154,51 @@ IDEの「File」また「＋」から`.air`また`.py`を選択して新規ス�
 スクリプトの例：
 ```
 from airtest.core.api import connect_device
-dev1 = connect_device("Android://127.0.0.1:5037/serialno1")  # 1台目のデバイス
-dev2 = connect_device("Android://127.0.0.1:5037/serialno2")  # 2台目のデバイス
-print(G.DEVICE_LIST)  # グローバル変数G.DEVICE_LISTが[dev1, dev2]になっていることを確認できる
-set_current(0) #1番目のデバイスに切り替え
-set_current("serialno2") #シリアル番号serialno2のデバイスに切り替え
-current_dev = device() #オブジェクトを取得
+
+# 1台目のデバイス
+dev1 = connect_device("Android://127.0.0.1:5037/serialno1")
+# 2台目のデバイス
+dev2 = connect_device("Android://127.0.0.1:5037/serialno2")
+
+# グローバル変数G.DEVICE_LISTが[dev1, dev2]になっていることを確認できる
+print(G.DEVICE_LIST)
+
+# 1番目のデバイスに切り替え
+set_current(0) 
+#シリアル番号serialno2のデバイスに切り替え
+set_current("serialno2")
+
+#オブジェクトを取得
+current_dev = device()
 ```
 
+#### Android専用インターフェース
+
+[airtest.core.android.android](https://airtest.readthedocs.io/en/latest/all_module/airtest.core.android.android.html)の呼出例：
+```
+# デバイスオブジェクト取得
+dev = device()
+
+# デバイス情報
+print(dev.get_display_info())
+
+# インストール済のアプリリスト
+print(dev.list_app())
+```
+ADBコマンドの呼出例：
+
+```
+# 对当前设备执行指令 adb shell ls
+print(shell("ls"))
+
+# 对特定设备执行adb指令
+dev = connect_device("Android:///device1")
+dev.shell("ls")
+
+# 切换到某台设备，执行adb指令
+set_current(0)
+shell("ls")
+```
 ---
 ### スクリプト作成
 ---
