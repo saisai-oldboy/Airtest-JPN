@@ -3,7 +3,7 @@
 - [基礎編：クイックスタート](https://github.com/saisai-dan-shift/Airtest/tree/master/docs#%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88)
 
 ---
-複雑な自動化テストを実現するには`Airtest`、`Poco`と`Pythonライブラリ`の連携が必要。また、オリジナルPythonライブラリを導入することによって高機能なテストケースを作ることができる。
+高度な自動化テストを実現するには`Airtest`、`Poco`と`Pythonライブラリ`の連携が必要。また、オリジナルPythonライブラリを導入することによって高機能なテストケースを作ることができる。
 * [IDE設定](https://github.com/saisai-dan-shift/Airtest/blob/master/docs/Advanced.md#ide%E8%A8%AD%E5%AE%9A)
 * [環境構築](https://github.com/saisai-dan-shift/Airtest/blob/master/docs/Advanced.md#%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89)
 * [Pythonコマンドで実行]()
@@ -57,7 +57,7 @@ IDEの「File」また「＋」から`.air`また`.py`を選択して新規ス�
 
 - Poco UIツリー  
   
-  プラットフォーム別[Pocoの導入方法](https://poco.readthedocs.io/zh_CN/latest/source/doc/poco_drivers.html)  
+  プラットフォーム別の[Pocoの導入方法](https://poco.readthedocs.io/zh_CN/latest/source/doc/poco_drivers.html)  
   AirtestIDEのPocoアシスタントから対象のプラットフォームを選択すれば要素を一覧表示・検索できる。さらに`poco Inspector`を使えば対象オブジェクトを簡単に見けられる。ツリーから対象オブジェクトをダブルクリックすればソースに追加できる。
   <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/"/> 
 
@@ -112,7 +112,7 @@ IDEの「File」また「＋」から`.air`また`.py`を選択して新規ス�
 - adb port：デフォルトは5037
 - serialno：androidのシリアルナンバー  
 
-番号指定の例：
+デバイス番号指定の例：
 >#指定なしの場合は最初のデバイスに接続  
 >Android:///  
 
@@ -133,6 +133,18 @@ IDEの「File」また「＋」から`.air`また`.py`を選択して新規ス�
 
 >#iOSデバイスに接続する  
 >iOS:///127.0.0.1:8100  
+
+接続オプション  
+デバイスによってIDEで接続する際に`use ADB orientation`また`use javacap`のチェックが必須となる。コマンド実行時も同様。  
+>#例：`Use javacap`の場合  
+>Android://127.0.0.1:5037/127.0.0.1:7555?cap_method=JAVACAP  
+
+>#複数項目を使う場合は`&&`を使う  
+>Android://127.0.0.1:5037/79d03fa?cap_method=JAVACAP&&ori_method=ADBORI&&touch_method=ADBTOUCH  
+
+実行画面の録画
+オプション`--recording`で実行すれば、`recording_0.mp4`のようなmp4ファイルが自動的に生成され、レポーティングの時はデフォルトのHTMLに取り込まれる
+
 
 ---
 ### レポーティング

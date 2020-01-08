@@ -25,7 +25,7 @@ AirtestはNetEaseが開発した画像認識によるUI自動テストIDE
   >スクリプト記録機能が内蔵されており、プログラミング出来ない人でも手軽にテストスクリプトを作成することができる  
   >IDEの導入、テスト実行とレポーティングは容易に行える
 - ゲーム自動化テスト
-  >主流なゲームエンジンをサポートするクロスプラットフォームである。モバイルゲームの自動化テストをより簡単にできる。
+  >主流ゲームエンジンをサポートするクロスプラットフォームである。モバイルゲームの自動化テストをより簡単にできる
 ---
 ## 自動化フレームワーク
 - [Airtest](https://airtest.readthedocs.io/en/latest/README_MORE.html)
@@ -35,7 +35,7 @@ AirtestはNetEaseが開発した画像認識によるUI自動テストIDE
 
 #### WEB自動化テスト
 - Seleniumサポート  
-  [Airtest-Selenium](http://airtest.netease.com/docs/en/1_quick_start/5_get_started_with_web_test.html?highlight=selenium)がIDEに内蔵されており、現在(2019/12)Chromeのみサポートしている
+  [Airtest-Selenium](http://airtest.netease.com/docs/en/1_quick_start/5_get_started_with_web_test.html?highlight=selenium)がIDEに内蔵されており、現在(2020/01)Chromeのみサポートしている
 
 #### 対応環境
 
@@ -49,7 +49,7 @@ AirtestはNetEaseが開発した画像認識によるUI自動テストIDE
 | Unity3D                   | √                              | √ [integration doc](https://poco-chinese.readthedocs.io/en/latest/source/doc/integration.html#unity3d)         |
 | Other engines             | √                              | √ [implementation doc](https://poco-chinese.readthedocs.io/en/latest/source/doc/implementation_guide.html)        |
 
-#### 対応デバイス一覧（2019/12時点）
+#### 対応デバイス一覧（2020/01時点）
 | No. | デバイス                          | 備考 |
 |------|----------------------------------|------|
 | 1    | Huawei Honor 3C（H30-L01）           |      |
@@ -192,7 +192,7 @@ AirtestはNetEaseが開発した画像認識によるUI自動テストIDE
 | 138  | Google Pixel 3a xl       |      |
 | 139  | Google Pixel 4       |      |
 
-#### 対応エミュレーター（2019/12時点）
+#### 対応エミュレーター（2020/01時点）
 | No. | エミュレーター                          |
 |------|----------------------------------|
 | 1    | iTools           |

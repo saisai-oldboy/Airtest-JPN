@@ -1,6 +1,6 @@
 # Airtest導入ガイド
 
-- 対象：AirtestIDE V1.2.2 (2019/12)
+- 対象：AirtestIDE V1.2.2 (2020/01)
 - AirtestスクリプトはPythonを使用する前提で開発されているため、使用前に[Pythonの基礎知識](https://docs.python.org/ja/3.6/tutorial/index.html)を習得しておくことがおすすめ
 - [事前準備](https://github.com/saisai-dan-shift/Airtest/tree/master/docs#%E4%BA%8B%E5%89%8D%E6%BA%96%E5%82%99)
 - [クイックスタート](https://github.com/saisai-dan-shift/Airtest/tree/master/docs#%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88)
@@ -9,7 +9,7 @@
 ### 事前準備
 ---
 - [Python 3.6.8](https://www.python.org/downloads/release/python-368/) をインストールしておく。Windowsの場合PATHを通す。  
-  他のバージョンでの動きが不安定なので、できるだけPython 3.6.Xを使用してください（2019/12時点）
+  他のバージョンでの動きが不安定なので、できるだけPython 3.6.Xを使用してください（2020/01時点）
 - [Java(JDK)](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)をダウンロードしてインストールする
 - [Git](https://git-scm.com/)をインストールしておく
 - [Homebrew](https://brew.sh/index_ja)をインストールしておく。**※ MacOSのみ**
