@@ -22,6 +22,39 @@
 - **`Custom Python Path` -> `Python 3.6.x実行ファイルの場所`**
 - `Chrome Path` -> `Chrome実行ファイルの場所`
   <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/A_Settings.JPG"/>
+
+---
+### 環境構築
+---
+- Airtestフレームワークをインストールする。
+  >pip install -U airtest
+
+  Mac/Linuxの場合、手動での権限付与が必要
+  >#Mac  
+  >cd {your_python_path}/site-packages/airtest/core/android/static/adb/mac  
+  >#Linux  
+  >cd {your_python_path}/site-packages/airtest/core/android/static/adb/linux
+
+  >chmod +x adb
+  
+  エラー対策：  
+    - `cv2`モジュール`ImportError: DLL load failed`エラー 
+      [最新版AirtestIDE](http://airtest.netease.com/changelog.html)をダウンロードして解凍する。`api-ms-win-downlevel-shlwapi-l1-1-0.dll`と`IEShims.dll`2つのファイルを`C:\Windows\System32`にコピーする。
+    - win.py実行時`import win32api`の`DLL load failed`エラー  
+      pywin32を再インストールする。  
+      >pip uninstall pywin32
+      >pip install pywin32==223
+
+
+- Pocoフレームワークをインストールする。
+  >pip install -U pocoui
+
+- ADBを更新しておいたほうがいい  
+  最新の[ADB(Android Debug Bridge)](https://developer.android.com/studio/releases/platform-tools.html)をダウンロードして解凍する。  
+  *`AirtestIDEのインストール場所`*`/airtest/core/android/static/adb/` にある`adb`ファイルを全て置き換える  
+  例：Windows SDKの場合  
+  <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_ADB.JPG"/>
+
 ---
 ### スクリプト作成
 ---
@@ -60,38 +93,32 @@ IDEの「File」また「＋」から`.air`また`.py`を選択して新規ス�
   AirtestIDEのPocoアシスタントから対象のプラットフォームを選択すれば要素を一覧表示・検索できる。さらに`poco Inspector`を使えば対象オブジェクトを簡単に見けられる。ツリーから対象オブジェクトをダブルクリックすればソースに追加できる。
   <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/A_pocotree.gif"/> 
 
----
-### 環境構築
----
-- Airtestフレームワークをインストールする。
-  >pip install -U airtest
 
-  Mac/Linuxの場合、手動での権限付与が必要
-  >#Mac  
-  >cd {your_python_path}/site-packages/airtest/core/android/static/adb/mac  
-  >#Linux  
-  >cd {your_python_path}/site-packages/airtest/core/android/static/adb/linux
-
-  >chmod +x adb
+- Android専用インターフェース  
+  [airtest.core.android.android](https://airtest.readthedocs.io/en/latest/all_module/airtest.core.android.android.html)の呼出例：
+  ```
+  # デバイスオブジェクト取得
+  dev = device()
   
-  エラー対策：  
-    - `cv2`モジュール`ImportError: DLL load failed`エラー 
-      [最新版AirtestIDE](http://airtest.netease.com/changelog.html)をダウンロードして解凍する。`api-ms-win-downlevel-shlwapi-l1-1-0.dll`と`IEShims.dll`2つのファイルを`C:\Windows\System32`にコピーする。
-    - win.py実行時`import win32api`の`DLL load failed`エラー  
-      pywin32を再インストールする。  
-      >pip uninstall pywin32
-      >pip install pywin32==223
-
-
-- Pocoフレームワークをインストールする。
-  >pip install -U pocoui
-
-- ADBを更新しておいたほうがいい  
-  最新の[ADB(Android Debug Bridge)](https://developer.android.com/studio/releases/platform-tools.html)をダウンロードして解凍する。  
-  *`AirtestIDEのインストール場所`*`/airtest/core/android/static/adb/` にある`adb`ファイルを全て置き換える  
-  例：Windows SDKの場合  
-  <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_ADB.JPG"/>
-
+  # デバイス情報
+  print(dev.get_display_info())
+  
+  # インストール済のアプリリスト
+  print(dev.list_app())
+  ```
+  ADBコマンドの呼出例：
+  ```
+  # adb shell ls
+  print(shell("ls"))
+  
+  # デバイス指定adb shell ls
+  dev = connect_device("Android:///device1")
+  dev.shell("ls")
+  
+  # 任意のデバイスに切り替えてaadb shell ls
+  set_current(0)
+  shell("ls")
+  ```
 ---
 ### Pythonコマンドで実行
 ---
@@ -171,38 +198,6 @@ set_current("serialno2")
 #オブジェクトを取得
 current_dev = device()
 ```
-
-#### Android専用インターフェース
-
-[airtest.core.android.android](https://airtest.readthedocs.io/en/latest/all_module/airtest.core.android.android.html)の呼出例：
-```
-# デバイスオブジェクト取得
-dev = device()
-
-# デバイス情報
-print(dev.get_display_info())
-
-# インストール済のアプリリスト
-print(dev.list_app())
-```
-ADBコマンドの呼出例：
-```
-# adb shell ls
-print(shell("ls"))
-
-# デバイス指定adb shell ls
-dev = connect_device("Android:///device1")
-dev.shell("ls")
-
-# 任意のデバイスに切り替えてaadb shell ls
-set_current(0)
-shell("ls")
-```
-
----
-### スクリプト作成
----
-
 
 ---
 ### レポーティング
