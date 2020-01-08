@@ -1,6 +1,6 @@
 # Airtest導入ガイド 応用編
 - [事前準備](https://github.com/saisai-dan-shift/Airtest/tree/master/docs#%E4%BA%8B%E5%89%8D%E6%BA%96%E5%82%99)
-- [基礎編：クイックスタート](https://github.com/saisai-dan-shift/Airtest/tree/master/docs#%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88)
+- [クイックスタート](https://github.com/saisai-dan-shift/Airtest/tree/master/docs#%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88)
 
 ---
 高度な自動化テストを実現するには`Airtest`、`Poco`と`Pythonライブラリ`の連携が必要。また、オリジナルPythonライブラリを導入することによって高機能なテストケースを作ることができる。
@@ -56,10 +56,9 @@ IDEの「File」また「＋」から`.air`また`.py`を選択して新規ス�
   <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/A_ocr_setting.gif"/>  
 
 - Poco UIツリー  
-  
   プラットフォーム別の[Pocoの導入方法](https://poco.readthedocs.io/zh_CN/latest/source/doc/poco_drivers.html)  
   AirtestIDEのPocoアシスタントから対象のプラットフォームを選択すれば要素を一覧表示・検索できる。さらに`poco Inspector`を使えば対象オブジェクトを簡単に見けられる。ツリーから対象オブジェクトをダブルクリックすればソースに追加できる。
-  <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/"/> 
+  <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/A_pocotree.gif"/> 
 
 ---
 ### 環境構築
