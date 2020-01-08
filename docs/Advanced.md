@@ -186,19 +186,19 @@ print(dev.get_display_info())
 print(dev.list_app())
 ```
 ADBコマンドの呼出例：
-
 ```
-# 对当前设备执行指令 adb shell ls
+# adb shell ls
 print(shell("ls"))
 
-# 对特定设备执行adb指令
+# デバイス指定adb shell ls
 dev = connect_device("Android:///device1")
 dev.shell("ls")
 
-# 切换到某台设备，执行adb指令
+# 任意のデバイスに切り替えてaadb shell ls
 set_current(0)
 shell("ls")
 ```
+
 ---
 ### スクリプト作成
 ---
