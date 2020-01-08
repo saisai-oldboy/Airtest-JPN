@@ -152,14 +152,15 @@ IDEの「File」また「＋」から`.air`また`.py`を選択して新規ス�
 >airtest run untitled.air --device Android:///serialno1 --device Android:///serialno2 --device Android:///serialno1
 
 スクリプトの例：
->>>from airtest.core.api import connect_device
+```
+from airtest.core.api import connect_device
 dev1 = connect_device("Android://127.0.0.1:5037/serialno1")  # 1台目のデバイス
 dev2 = connect_device("Android://127.0.0.1:5037/serialno2")  # 2台目のデバイス
-print(G.DEVICE_LIST)  # グローバル変数G.DEVICE_LISTが[dev1, dev2]であることを確認できる
+print(G.DEVICE_LIST)  # グローバル変数G.DEVICE_LISTが[dev1, dev2]になっていることを確認できる
 set_current(0) #1番目のデバイスに切り替え
 set_current("serialno2") #シリアル番号serialno2のデバイスに切り替え
 current_dev = device() #オブジェクトを取得
-
+```
 
 ---
 ### スクリプト作成
