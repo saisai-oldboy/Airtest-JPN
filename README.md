@@ -8,7 +8,7 @@ AirtestはNetEaseが開発した画像認識によるUI自動テストIDE
 
 - [Github - AirtestProject](https://github.com/AirtestProject)
 
-- オフィシャル資料（英語）
+- オフィシャル技術資料（英語）
   >[AritestIDE](http://airtest.netease.com/docs/en/index.html)  
   >[Aritest](https://airtest.readthedocs.io/en/latest/)  
   >[Poco](https://poco.readthedocs.io/en/latest/)
