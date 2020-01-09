@@ -3,7 +3,7 @@
 - [クイックスタート](https://github.com/saisai-dan-shift/Airtest/tree/master/docs#%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88)
 
 ---
-高度な自動化テストを実現するには`Airtest`、`Poco`と`Pythonライブラリ`の連携が必要。また、オリジナルPythonライブラリを導入することによって高機能なテストケースを作ることができる。
+高度な自動化テストを実現するには`Airtest`、`Poco`と`Pythonライブラリ`の連携が必要。オリジナルPythonライブラリを導入することによって高機能なテストケースを作れる。
 * [IDE設定](https://github.com/saisai-dan-shift/Airtest/blob/master/docs/Advanced.md#ide%E8%A8%AD%E5%AE%9A)
 * [環境構築](https://github.com/saisai-dan-shift/Airtest/blob/master/docs/Advanced.md#%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89)
 * [Pythonコマンドで実行]()
@@ -192,17 +192,28 @@ print(G.DEVICE_LIST)
 
 # 1番目のデバイスに切り替え
 set_current(0) 
-#シリアル番号serialno2のデバイスに切り替え
+# シリアル番号serialno2のデバイスに切り替え
 set_current("serialno2")
 
-#オブジェクトを取得
+# オブジェクトを取得
 current_dev = device()
 ```
 
 ---
 ### レポーティング
 ---
+出力ボタンを押すとレポートが自動的に生成される
+
+
+レポート情報を入力するとHTMLに反映される
+
+A_report.gif
+
 
 ---
 ### カスタマイズ
+---
+
+---
+### PocoとAirtest
 ---
