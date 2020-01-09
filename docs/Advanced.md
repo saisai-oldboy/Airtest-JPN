@@ -285,6 +285,7 @@ common_function()
   - 実行時間：`kaze > sift > akaze > surf > brisk > brief > orb`
   - 特徴点抽出：`kaze > akaze > surf > brisk > sift > brief > orb`  
 <img src=https://github.com/saisai-oldboy/Airtest/blob/master/docs/img/hdpi_methods_compare.png/>  
+
 - 複数画像のベンチマーク
   - メモリ使用量：`kaze > sift > akaze > surf > brief > brisk > orb`
   - CPU使用率：`kaze > surf > akaze > brisk > sift > brief > orb`
