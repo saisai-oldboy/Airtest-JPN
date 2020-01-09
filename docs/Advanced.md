@@ -214,9 +214,17 @@ current_dev = device()
 ##### レポート：
 <img src=https://github.com/saisai-oldboy/Airtest/blob/master/docs/img/A_report.gif/>  
 
-デフォルトは英語で生成されるが、日本語で出力したい場合はカスタマイズが必要なので、[カスタマイズ](https://github.com/saisai-oldboy/Airtest/blob/master/docs/Advanced.md#%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA)を参照  
+デフォルトは英語で生成されるが、**日本語**で出力したい場合はカスタマイズが必要なので、[カスタマイズ](https://github.com/saisai-oldboy/Airtest/blob/master/docs/Advanced.md#%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA)を参照  
 
+Pythonコマンドで出力  
+>airtest report untitled.air --log_root log/ --outfile log/log.html --lang en --static_root https://host:port/static/ --export ./report --plugin poco.utils.airtest.report  
 
+- `--log_root`：ログファイルの場所
+- `--outfile`：出力先。但し、このHTMLはIDEの使用者しか閲覧できない。他人に見せたい場合、`--export`オプションを使う
+- `--lang`：言語。en 英語/ zh 中国語
+- `--static_root`：exportする度にHTML静的ファイル（css、js、エビデンス画像など）がコピーされる。冗長を回避するため、共有ファイルのURLを指定できる
+- `--export`：エクスポート先（完全コピー）
+- `--plugin`：プラグインを使用する場合。`poco.utils.airtest.report`や`airtest_selenium.report`など
 
 ---
 ### カスタマイズ
