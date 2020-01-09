@@ -206,6 +206,9 @@ current_dev = device()
 <img src=https://github.com/saisai-oldboy/Airtest/blob/master/docs/img/A_reportbtn.JPG/>
 
 レポート情報を入力するとHTMLに反映される  
+- `__author__`：担当者
+- `__title__`：タイトル
+- `__desc__`：テストケースの概要など
 <img src=https://github.com/saisai-oldboy/Airtest/blob/master/docs/img/A_reportinfo.JPG/>  
 
 ##### レポート：
