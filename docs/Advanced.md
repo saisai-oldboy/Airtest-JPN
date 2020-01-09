@@ -214,7 +214,7 @@ current_dev = device()
 #### レポート：
 <img src=https://github.com/saisai-oldboy/Airtest/blob/master/docs/img/A_report.gif/>  
 
-デフォルトは英語で生成されるが、**日本語**で出力したい場合はカスタマイズが必要なので、[カスタマイズ](https://github.com/saisai-oldboy/Airtest/blob/master/docs/Advanced.md#%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA)を参照  
+デフォルトは英語で生成されるが、**日本語**で出力したい場合にはカスタマイズが必要なので、[カスタマイズ](https://github.com/saisai-oldboy/Airtest/blob/master/docs/Advanced.md#%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA)を参照  
 
 #### Pythonコマンドで出力  
 >airtest report untitled.air --log_root log/ --outfile log/log.html --lang en --static_root https://host:port/static/ --export ./report --plugin poco.utils.airtest.report  
@@ -291,13 +291,15 @@ current_dev = device()
 
 - **レポートの日本語化**  
   [report](https://github.com/saisai-oldboy/Airtest/tree/master/report)のファイルを以下の2か所に上書きする  
-  >Pythonのインストール場所\Lib\site-packages\airtest\report  
+  >Python3.6.xのインストール場所\Lib\site-packages\airtest\report  
   >AirtestIDEインストール場所\airtest\report  
 
   [sample](https://github.com/saisai-oldboy/Airtest/tree/master/sample)のファイルを以下の場所に上書きする
   >AirtestIDEインストール場所\sample 
   
   **これでAirtestIDEの`View Reportボタン`をワンクリックでexportされる。**  
+  <img src=https://github.com/saisai-oldboy/Airtest/blob/master/docs/img/A_reportbtn.JPG/>  
+  <img src=https://github.com/saisai-oldboy/Airtest/blob/master/docs/img/A_ExportReport.JPG/>  
 
   注意：  
   - デフォルト言語が強制的に日本語となる
