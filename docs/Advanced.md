@@ -211,12 +211,12 @@ current_dev = device()
 - `__desc__`：テストケースの概要など
 <img src=https://github.com/saisai-oldboy/Airtest/blob/master/docs/img/A_reportinfo.JPG/>  
 
-##### レポート：
+#### レポート：
 <img src=https://github.com/saisai-oldboy/Airtest/blob/master/docs/img/A_report.gif/>  
 
 デフォルトは英語で生成されるが、**日本語**で出力したい場合はカスタマイズが必要なので、[カスタマイズ](https://github.com/saisai-oldboy/Airtest/blob/master/docs/Advanced.md#%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA)を参照  
 
-Pythonコマンドで出力  
+#### Pythonコマンドで出力  
 >airtest report untitled.air --log_root log/ --outfile log/log.html --lang en --static_root https://host:port/static/ --export ./report --plugin poco.utils.airtest.report  
 
 - `--log_root`：ログファイルの場所
