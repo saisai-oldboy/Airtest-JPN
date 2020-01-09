@@ -230,6 +230,63 @@ current_dev = device()
 ### カスタマイズ
 ---
 
+
+
 ---
-### PocoとAirtest
+### AirtestとPoco
 ---
+
+#### AirtestAPI
+
+`touch` apiの例:
+```
+from airtest.core.api import *
+# Androidの場合、押す時間の表す引数durationが使用可能
+touch((600, 500), duration=1)
+```
+他の`.ari`プロジェクトを呼び出す際の例：
+```
+from airtest.core.api import using
+using("common.air")
+
+from common import common_function
+
+common_function()
+```
+#### 画像認証
+
+画像認証は便利だが、決して万能ではない。例えば単一の画像ヒット率が99%だとしても、50枚を全て正確に検出する確率は60%程度しかない。認識率を上げるための注意点：  
+- 画像の品質：クリア、独立、背景無し（ノイズ）
+- 認識機能は独立なコンテンツに適している。例えばボタン、アイコン、アバターなど
+- 重複な画像が重なって表示されている場合、認識度がかなり低くなる
+- アプリによって解像度が固定されている場合がある、デバイスのデフォルト設定とは限らない
+- 場合によって手動で最適な認証方式を指定する
+  
+画像認証方式：  
+- テンプレート式：
+  - マルチ解像度で使用不可
+  - 必ずマッチング結果が返す
+  - 方式名：`tpl`
+- 特徴点式：
+  - マルチ解像度で使用可能
+  - マッチング結果が返さない可能性があり（テストバグと見なす）
+  - 方式名リスト：["kaze", "brisk", "akaze", "orb", "sift", "surf", "brief"]  
+  スクリプトの中で指定する方法：
+  ```
+  from airtest.core.settings import Settings as ST
+  # 認識方式の実行順をリストに設定する。認識結果なしまたタイムアウトの時に次の方式を実行する
+  ST.CVSTRATEGY = ["surf", "tpl"]
+  ```
+画像認証方式の区別：
+
+- 単一画像のベンチマーク
+  - メモリ使用量：`kaze > sift > akaze > surf > brief > brisk > orb`
+  - CPU使用率：`kaze > surf > akaze > brisk > sift > brief > orb`
+  - 実行時間：`kaze > sift > akaze > surf > brisk > brief > orb`
+  - 特徴点抽出：`kaze > akaze > surf > brisk > sift > brief > orb`  
+<img src=https://github.com/saisai-oldboy/Airtest/blob/master/docs/img/hdpi_methods_compare.png/>  
+- 複数画像のベンチマーク
+  - メモリ使用量：`kaze > sift > akaze > surf > brief > brisk > orb`
+  - CPU使用率：`kaze > surf > akaze > brisk > sift > brief > orb`
+  - 認識率：`sift > surf > kaze > akaze > brisk > brief > orb`  
+<img src=https://github.com/saisai-oldboy/Airtest/blob/master/docs/img/different_images_matching_compare.png/>  
