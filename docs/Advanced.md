@@ -1,4 +1,4 @@
-- [クイックスタート](https://github.com/saisai-oldboy/Airtest/tree/master/docs#%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88)  
+- [クイックスタート](https://github.com/saisai-oldboy/Airtest/tree/master/docs)  
 ---
 
 # Airtest導入ガイド 応用編
