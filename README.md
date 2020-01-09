@@ -202,4 +202,4 @@ AirtestはNetEaseが開発した画像認識によるUI自動テストIDE
 | 3    | AVD          |
 
 ## 感謝
-NetEase社の[AirTestプロジェクトチーム](https://github.com/orgs/AirtestProject/people)に感謝します
+NetEase社の[Airtest プロジェクトチーム](https://github.com/orgs/AirtestProject/people)に感謝します
