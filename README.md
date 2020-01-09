@@ -14,6 +14,7 @@ AirtestはNetEaseが開発した画像認識によるUI自動テストIDE
   >[Poco](https://poco.readthedocs.io/en/latest/)
 
 - [導入ガイド（日本語）](https://github.com/saisai-oldboy/Airtest/tree/master/docs)
+- [感謝]()
 
 ## 概要
 
@@ -198,3 +199,6 @@ AirtestはNetEaseが開発した画像認識によるUI自動テストIDE
 | 1    | iTools           |
 | 2    | BlueStacks          |
 | 3    | AVD          |
+
+## 感謝
+NetEase社の[AirTestプロジェクトチーム](https://github.com/orgs/AirtestProject/people)に感謝します
