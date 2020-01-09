@@ -229,9 +229,9 @@ current_dev = device()
 ---
 ### カスタマイズ
 ---
-- ランチャー
-  オリジナル機能をAirtestIDEに追加したい場合、`D:\AirtestIDE_2019-09-11_py3_win64\sample`の中にある`custom_launcher.py`を修正する。  
-  `custom_launcher.py`側:
+- **ランチャー**  
+  オリジナル機能をAirtestIDEに追加したい場合、`AirtestIDEインストール場所\sample`の中にある`custom_launcher.py`を修正する。  
+  custom_launcher.py側:
   ```
   from airtest.cli.runner import AirtestCase, run_script
   from airtest.cli.parser import runner_parser
@@ -264,7 +264,7 @@ current_dev = device()
   from airtest.cli.parser import runner_parser
   from airtest.core.settings import Settings as ST
 
-  # コマンドで実行する場合import AirtestCaseは必須
+  # コマンドで実行する場合import AirtestCaseは手動で追加しましょう
   if not global().get("AirtestCase"):
       from airtest.cli.runner import AirtestCase
   
@@ -289,8 +289,20 @@ current_dev = device()
   Pythonコマンドで実行する場合：  
   >python custom_launcher.py test.air --device Android:///serial_num --log log_path
 
-- レポートの日本語化
+- **レポートの日本語化**  
+  [report]()のファイルを以下の2か所に上書きする  
+  >Pythonのインストール場所\Lib\site-packages\airtest\report  
+  >AirtestIDEインストール場所\airtest\report  
 
+  [sample]()のファイルを以下の場所に上書きする
+  >AirtestIDEインストール場所\sample 
+  
+  **これでAirtestIDEの`View Reportボタン`をワンクリックでexportされる。**  
+
+  注意：  
+  - デフォルト言語が強制的に日本語となる
+  - exportしたファイルが`設定したLog Path\`の下に`ExportReport`のフォルダが生成される
+  - レポート生成を実行する度に`.airプロジェクト名`+`実行年月日時分`形式で生成される。  
 
 ---
 ### AirtestとPoco
