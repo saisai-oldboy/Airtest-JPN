@@ -1,9 +1,9 @@
 - [事前準備](https://github.com/saisai-oldboy/Airtest/tree/master/docs#%E4%BA%8B%E5%89%8D%E6%BA%96%E5%82%99)
 - [クイックスタート](https://github.com/saisai-oldboy/Airtest/tree/master/docs#%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88)  
+---
 
 # Airtest導入ガイド 応用編
 
----
 高度な自動化テストを実現するには`Airtest`、`Poco`と`Pythonライブラリ`の連携が必要。オリジナルPythonライブラリを導入することによって高機能なテストケースを作れる。
 * [IDE設定](https://github.com/saisai-oldboy/Airtest/blob/master/docs/Advanced.md#ide%E8%A8%AD%E5%AE%9A)
 * [環境構築](https://github.com/saisai-oldboy/Airtest/blob/master/docs/Advanced.md#%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89)
