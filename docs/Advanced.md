@@ -222,7 +222,7 @@ current_dev = device()
 - `--log_root`：ログファイルの場所
 - `--outfile`：出力先。しかし、このHTMLはIDEの使用者しか閲覧できない。他人に見せたい場合、`--export`オプションを使う
 - `--lang`：言語。en 英語/ zh 中国語
-- `--static_root`：exportする度にHTML静的ファイル（css、js、エビデンス画像など）がコピーされる。冗長を回避するため、共有ファイルのURLを指定できる
+- `--static_root`：HTMLの静的ファイルcss、jsなど）の場所。exportする度にコピーされるので、冗長を回避するにはファイルをサーバー上に置くと良い
 - `--export`：エクスポート先（完全コピー）
 - `--plugin`：`poco.utils.airtest.report`や`airtest_selenium.report`などのプラグインを使う  
 
