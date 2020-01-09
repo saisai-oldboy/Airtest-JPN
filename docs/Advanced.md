@@ -128,15 +128,15 @@ IDEの「File」また「＋」から`.air`また`.py`を選択して新規ス�
 >python -m airtest run untitled.air --device Android:///デバイス番号 --log log/
 
 - `airtest run` 実行スクリプト 
-- --device デバイス番号
-- --log指定 ログファイル保存場所
+- `--device` デバイス番号
+- `--log指定` ログファイル保存場所
   
 #### デバイス番号の定義：
 >Android://<adbhost[localhost]>:<adbport[5037]>/<serialno>
 
-- adbhost：adb serverのIPアドレス。デフォルトは127.0.0.1
-- adb port：デフォルトは5037
-- serialno：androidのシリアルナンバー  
+- `adbhost`：adb serverのIPアドレス。デフォルトは127.0.0.1
+- `adb port`：デフォルトは5037
+- `serialno`：androidのシリアルナンバー  
 
 #### デバイス番号指定の例：
 >#指定なしの場合は最初のデバイスに接続  
