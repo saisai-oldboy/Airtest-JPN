@@ -290,11 +290,11 @@ current_dev = device()
   >python custom_launcher.py test.air --device Android:///serial_num --log log_path
 
 - **レポートの日本語化**  
-  [report]()のファイルを以下の2か所に上書きする  
+  [report](https://github.com/saisai-oldboy/Airtest/tree/master/report)のファイルを以下の2か所に上書きする  
   >Pythonのインストール場所\Lib\site-packages\airtest\report  
   >AirtestIDEインストール場所\airtest\report  
 
-  [sample]()のファイルを以下の場所に上書きする
+  [sample](https://github.com/saisai-oldboy/Airtest/tree/master/sample)のファイルを以下の場所に上書きする
   >AirtestIDEインストール場所\sample 
   
   **これでAirtestIDEの`View Reportボタン`をワンクリックでexportされる。**  
