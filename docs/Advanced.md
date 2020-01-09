@@ -220,7 +220,7 @@ Pythonコマンドで出力
 >airtest report untitled.air --log_root log/ --outfile log/log.html --lang en --static_root https://host:port/static/ --export ./report --plugin poco.utils.airtest.report  
 
 - `--log_root`：ログファイルの場所
-- `--outfile`：出力先。但し、このHTMLはIDEの使用者しか閲覧できない。他人に見せたい場合、`--export`オプションを使う
+- `--outfile`：出力先。しかし、このHTMLはIDEの使用者しか閲覧できない。他人に見せたい場合、`--export`オプションを使う
 - `--lang`：言語。en 英語/ zh 中国語
 - `--static_root`：exportする度にHTML静的ファイル（css、js、エビデンス画像など）がコピーされる。冗長を回避するため、共有ファイルのURLを指定できる
 - `--export`：エクスポート先（完全コピー）
