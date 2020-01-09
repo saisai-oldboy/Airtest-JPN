@@ -224,7 +224,7 @@ current_dev = device()
 - `--lang`：言語。en 英語/ zh 中国語
 - `--static_root`：exportする度にHTML静的ファイル（css、js、エビデンス画像など）がコピーされる。冗長を回避するため、共有ファイルのURLを指定できる
 - `--export`：エクスポート先（完全コピー）
-- `--plugin`：プラグインを使用する場合。`poco.utils.airtest.report`や`airtest_selenium.report`など
+- `--plugin`：`poco.utils.airtest.report`や`airtest_selenium.report`などのプラグインを使う  
 
 ---
 ### カスタマイズ
