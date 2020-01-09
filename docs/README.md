@@ -2,9 +2,9 @@
 
 - 対象：AirtestIDE V1.2.2 (2020/01)
 - AirtestスクリプトはPythonを使用する前提で開発されているため、使用前に[Pythonの基礎知識](https://docs.python.org/ja/3.6/tutorial/index.html)を習得しておくことがおすすめ
-- [事前準備](https://github.com/saisai-dan-shift/Airtest/tree/master/docs#%E4%BA%8B%E5%89%8D%E6%BA%96%E5%82%99)
-- [クイックスタート](https://github.com/saisai-dan-shift/Airtest/tree/master/docs#%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88)
-- [応用編](https://github.com/saisai-dan-shift/Airtest/blob/master/docs/Advanced.md)
+- [事前準備](https://github.com/saisai-oldboy/Airtest/tree/master/docs#%E4%BA%8B%E5%89%8D%E6%BA%96%E5%82%99)
+- [クイックスタート](https://github.com/saisai-oldboy/Airtest/tree/master/docs#%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88)
+- [応用編](https://github.com/saisai-oldboy/Airtest/blob/master/docs/Advanced.md)
 ---
 ### 事前準備
 ---
@@ -28,7 +28,7 @@ AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)し�
 ※Githubアカウントで登録可能
 
 - 起動画面  
-<img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_start.JPG"/>
+<img src="https://github.com/saisai-oldboy/Airtest/blob/master/docs/img/Q_start.JPG"/>
   
 #### 2.デバイス接続
 
@@ -39,7 +39,7 @@ AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)し�
     - Android 9 の場合 `use javacap` を外しても問題ない
     - Android 10 の場合 `use javacap` に **`必ずチェック`** を入れてください  
     ※v1.2.2の場合、ADBのみで接続するとエラーになる
-    <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_android_connect.gif"/>
+    <img src="https://github.com/saisai-oldboy/Airtest/blob/master/docs/img/Q_android_connect.gif"/>
     <br/>
 - **Windowsアプリ**
    - 「Select Window」また「Search Window」でWindowsアプリを選択する  
@@ -50,14 +50,14 @@ AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)し�
     - 1.iOS-TagentをPCにダウンロード
       > git clone git@github.com:AirtestProject/iOS-Tagent.git
     - 2.XcodeでiOS-Tagentを開き、iPhoneのDeveloperモードが有効になっていることを確認する。
-      <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_iPhoneDev.png" width="30%"/>   
+      <img src="https://github.com/saisai-oldboy/Airtest/blob/master/docs/img/Q_iPhoneDev.png" width="30%"/>   
       > Xcodeメニューから`product` -> `Scheme` -> `WebDriverAgentRunner` を選択する。
-      <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_iOSTagent.png"/>  
+      <img src="https://github.com/saisai-oldboy/Airtest/blob/master/docs/img/Q_iOSTagent.png"/>  
 
       > Xcodeメニューから`product` -> `Destination` -> *`接続したiPhone`* を選択する。  
          
       > Xcodeメニューから`product` -> `Test` を選択し、正常に起動していることを確認する。  
-      <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_Xcode.png"  width = "400" />
+      <img src="https://github.com/saisai-oldboy/Airtest/blob/master/docs/img/Q_Xcode.png"  width = "400" />
         
       ```
       2019-12-26 16:16:39.047184+0900 WebDriverAgentRunner-Runner[380:60778] Running tests...
@@ -69,7 +69,7 @@ AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)し�
       t =     0.00s Set Up
       ```
   - iPhone側で`設定` -> `一般` -> `プロフィルとデバイス管理` -> `WebDriverAgent` を有効にする。  
-    <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_iPhoneprofile.png" width="30%"/>  
+    <img src="https://github.com/saisai-oldboy/Airtest/blob/master/docs/img/Q_iPhoneprofile.png" width="30%"/>  
 
   - iproxyをインストールする。  
     `$ brew install libimobiledevice`
@@ -80,7 +80,7 @@ AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)し�
   - ブラウザを起動して http://127.0.0.1:8100/inspector にアクセスする。iPhoneの画面が映し出されていることを確認する。  
 
   - AirtestIDEで接続  
-    <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/Q_Airtest_iOS.gif"/>  
+    <img src="https://github.com/saisai-oldboy/Airtest/blob/master/docs/img/Q_Airtest_iOS.gif"/>  
    
 #### 3.最初のテストを作る
 
@@ -88,6 +88,6 @@ AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)し�
   [AirtestIDE公式ドキュメント](http://airtest.netease.com/docs/docs_AirtestIDE-en_US/1_online_help/airtest_intro.html#recording-airtest-script-in-airtestide)  
   レコーディング例（from 公式サイト）：
   - 自動レコーディング  
-    <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/airtest_auto_record.gif"/> 
+    <img src="https://github.com/saisai-oldboy/Airtest/blob/master/docs/img/airtest_auto_record.gif"/> 
   - マニュアルレコーディング  
-    <img src="https://github.com/saisai-dan-shift/Airtest/blob/master/docs/img/airtest_manual_record.gif"/>
+    <img src="https://github.com/saisai-oldboy/Airtest/blob/master/docs/img/airtest_manual_record.gif"/>
