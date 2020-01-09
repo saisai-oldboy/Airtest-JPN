@@ -89,5 +89,5 @@ AirtestIDEを[ダウンロード](http://airtest.netease.com/changelog.html)し�
   レコーディング例（from 公式サイト）：
   - 自動レコーディング  
     <img src="https://github.com/saisai-oldboy/Airtest/blob/master/docs/img/airtest_auto_record.gif"/> 
-  - マニュアルレコーディング  
+  - 手動レコーディング  
     <img src="https://github.com/saisai-oldboy/Airtest/blob/master/docs/img/airtest_manual_record.gif"/>
