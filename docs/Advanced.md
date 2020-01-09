@@ -172,7 +172,7 @@ IDEの「File」また「＋」から`.air`また`.py`を選択して新規ス�
 オプション`--recording`で実行すれば、`recording_0.mp4`のようなmp4ファイルが自動的に生成され、レポーティングの時はデフォルトのHTMLに取り込まれる  
 
 #### 複数デバイスの実行（Androidのみ）
-**複数デバイスで1つのスクリプト**を同時実行するでなく、**1つのスクリプトを複数のデバイス**で実行する場合に使う。例えば、SNSアプリでお互いに友たち承認する場合など、デバイス間の連携が必要なときには有効な手段となる。  
+**複数デバイスで1つのスクリプト**を同時実行するでなく、**1つのスクリプトを複数のデバイス**で実行する場合に使う。例えば、SNSアプリでお互いに友たち承認するなど、デバイス間の連携が必要なときには有効な手段となる。  
   
 方法：`set_current `で簡単にデバイスの切り替えられる。  
 コマンド実行時：`--device`オプションでデバイス追加する
@@ -229,7 +229,67 @@ current_dev = device()
 ---
 ### カスタマイズ
 ---
+- ランチャー
+  オリジナル機能をAirtestIDEに追加したい場合、`D:\AirtestIDE_2019-09-11_py3_win64\sample`の中にある`custom_launcher.py`を修正する。  
+  `custom_launcher.py`側:
+  ```
+  from airtest.cli.runner import AirtestCase, run_script
+  from airtest.cli.parser import runner_parser
 
+  class CustomAirtestCase(AirtestCase):
+
+      def setUp(self):
+          print("custom setup")
+          # add var/function/class/.. to globals
+          # self.scope["hunter"] = "i am hunter"
+          # self.scope["add"] = lambda x: x+1
+
+          # exec setup script
+          super(CustomAirtestCase, self).setUp()
+
+      def tearDown(self):
+          print("custom tearDown")
+          # exec teardown script
+          super(CustomAirtestCase, self).setUp()
+
+
+  if __name__ == '__main__':
+      ap = runner_parser()
+      args = ap.parse_args()
+      run_script(args, CustomAirtestCase)
+  ```
+  スクリプト側：
+  ```
+  from airtest.cli.runner import run_script
+  from airtest.cli.parser import runner_parser
+  from airtest.core.settings import Settings as ST
+
+  # コマンドで実行する場合import AirtestCaseは必須
+  if not global().get("AirtestCase"):
+      from airtest.cli.runner import AirtestCase
+  
+  class CustomAirtestCase(AirtestCase):
+      def __init__(self):
+          super(CustomAirtestCase, self).__init__()
+  
+      def setUp(self):
+          print("custom setup")
+          super(CustomAirtestCase, self).setUp()
+  
+      def tearDown(self):
+          print("custom tearDown")
+          super(CustomAirtestCase, self).tearDown()
+  
+  if __name__ == '__main__':
+      ap = runner_parser()
+      args = ap.parse_args()
+      run_script(args, CustomAirtestCase)
+  ```
+  
+  Pythonコマンドで実行する場合：  
+  >python custom_launcher.py test.air --device Android:///serial_num --log log_path
+
+- レポートの日本語化
 
 
 ---
