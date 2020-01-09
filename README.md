@@ -53,6 +53,9 @@ AirtestはNetEaseが開発した画像認識によるUI自動テストIDE
 | Other engines             | √                              | √ [implementation doc](https://poco-chinese.readthedocs.io/en/latest/source/doc/implementation_guide.html)        |
 
 #### 対応デバイス一覧（2020/01時点）
+- iphone全種類
+- Android対応デバイス一覧
+
 | No. | デバイス                          | 備考 |
 |------|----------------------------------|------|
 | 1    | Huawei Honor 3C（H30-L01）           |      |
