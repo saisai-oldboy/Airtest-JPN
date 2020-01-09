@@ -6,8 +6,8 @@
 高度な自動化テストを実現するには`Airtest`、`Poco`と`Pythonライブラリ`の連携が必要。オリジナルPythonライブラリを導入することによって高機能なテストケースを作れる。
 * [IDE設定](https://github.com/saisai-oldboy/Airtest/blob/master/docs/Advanced.md#ide%E8%A8%AD%E5%AE%9A)
 * [環境構築](https://github.com/saisai-oldboy/Airtest/blob/master/docs/Advanced.md#%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89)
-* [Pythonコマンドで実行]()
 * [スクリプト作成](https://github.com/saisai-oldboy/Airtest/blob/master/docs/Advanced.md#%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E4%BD%9C%E6%88%90)
+* [Pythonコマンドで実行]()
 * [レポーティング](https://github.com/saisai-oldboy/Airtest/blob/master/docs/Advanced.md#%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0)
 * [カスタマイズ](https://github.com/saisai-oldboy/Airtest/blob/master/docs/Advanced.md#%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA)
 
