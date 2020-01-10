@@ -327,6 +327,16 @@ from common import common_function
 
 common_function()
 ```
+
+#### apkファイル作成
+- java(jdk)のインストールと環境設定を事前に行う。
+- FirebaseプラグインがAirtestIDEに内蔵されており、apkファイルを生成すればFirebaseテストクラウド上でも実行可能。  
+   <img src=https://github.com/saisai-oldboy/Airtest/blob/master/docs/img/A_Firebase.JPG/>
+   <img src=https://github.com/saisai-oldboy/Airtest/blob/master/docs/img/A_Firebase_script.JPG/>  
+
+- ADBコマンドで実行　例：  
+  >adb shell am instrument -w com.netease.open.airbase/android.support.test.runner.AndroidJUnitRunner
+
 #### 画像認証
 
 画像認証は便利だが、決して万能ではない。例えば単一の画像ヒット率が99%だとしても、50枚を全て正確に検出する確率は60%程度しかない。認識率を上げるための注意点：  
