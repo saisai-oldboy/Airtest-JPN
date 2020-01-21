@@ -302,9 +302,10 @@ current_dev = device()
   <img src=https://github.com/saisai-oldboy/Airtest/blob/master/docs/img/A_reportbtn.JPG/>  
   <img src=https://github.com/saisai-oldboy/Airtest/blob/master/docs/img/A_ExportReport.JPG/>  
   
+  **注意**
   - 表示言語が強制的に日本語となる
-  - 設定したLog Path\`の下に`ExportReport`のフォルダが生成される
-  - レポートを生成する度に`.airプロジェクト名`+`実行年月日時分`形式でexportされる  
+  - 設定した`Log Path\`の下に`ExportReport`のフォルダが生成される
+  - レポートを生成する度に`airプロジェクト名`+`実行年月日時分`形式でexportされる  
 
 ---
 ### AirtestとPoco
