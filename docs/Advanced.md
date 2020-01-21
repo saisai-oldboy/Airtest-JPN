@@ -38,7 +38,7 @@
   >chmod +x adb
   
   エラー対策：  
-    - `cv2`モジュール`ImportError: DLL load failed`エラー 
+    - `cv2`モジュール`ImportError: DLL load failed`エラー  
       [最新版AirtestIDE](http://airtest.netease.com/changelog.html)をダウンロードして解凍する。`api-ms-win-downlevel-shlwapi-l1-1-0.dll`と`IEShims.dll`2つのファイルを`C:\Windows\System32`にコピーする。
     - win.py実行時`import win32api`の`DLL load failed`エラー  
       pywin32を再インストールする。  
