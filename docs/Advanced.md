@@ -31,9 +31,9 @@
 
   Mac/Linuxの場合、手動での権限付与が必要
   >#Mac  
-  >cd {your_python_path}/site-packages/airtest/core/android/static/adb/mac  
+  >cd pythonインストール場所/site-packages/airtest/core/android/static/adb/mac  
   >#Linux  
-  >cd {your_python_path}/site-packages/airtest/core/android/static/adb/linux
+  >cd pythonインストール場所/site-packages/airtest/core/android/static/adb/linux
 
   >chmod +x adb
   
