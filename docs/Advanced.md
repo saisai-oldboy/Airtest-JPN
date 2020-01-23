@@ -46,14 +46,21 @@
       >pip install pywin32==223
 
 
-- Pocoフレームワークをインストールする。
+- Pocoフレームワークをインストールする。  
   >pip install -U pocoui
 
 - ADBを更新しておいたほうがいい  
   最新の[ADB(Android Debug Bridge)](https://developer.android.com/studio/releases/platform-tools.html)をダウンロードして解凍する。  
   `AirtestIDEのインストール場所/airtest/core/android/static/adb/` と`Python3.6.xのインストール場所\Lib\site-packages\airtest\core\android\static\adb`にある`adb`ファイルを全て置き換える  
   例：Windows SDKの場合  
-  <img src="https://github.com/saisai-oldboy/Airtest/blob/master/docs/img/Q_ADB.JPG"/>
+  <img src="https://github.com/saisai-oldboy/Airtest/blob/master/docs/img/Q_ADB.JPG"/>  
+
+- ADBでデバイス接続：  
+  Windowsの場合ADBをPATHに追加する  
+  > `adb devices`
+  > List of devices attached
+  > 922XXXXXX      device
+  これでデバイス番号`922XXXXXX`を検索できる
 
 ---
 ### スクリプト作成
@@ -159,6 +166,12 @@ IDEの「File」また「＋」から`.air`また`.py`を選択して新規ス�
 
 >#iOSデバイスに接続する  
 >iOS:///127.0.0.1:8100  
+
+#### 接続時の注意点：
+> --device Android://127.0.0.1:5037/79d03fa?cap_method=JAVACAP&&ori_method=ADBORI `# windowsで使用不可`  
+> --device Android://127.0.0.1:5037/79d03fa?cap_method=JAVACAP^&^&ori_method=ADBORI  `# ^でエスケープ`  
+> --device Android://127.0.0.1:5037/79d03fa?cap_method=JAVACAP\&\&ori_method=ADBORI  `# macの場合は\でエスケープ`  
+
 
 #### 接続オプション 
 デバイスによってIDEで接続する際に`use ADB orientation`また`use javacap`のチェックが必須となる。コマンド実行時も同様。  

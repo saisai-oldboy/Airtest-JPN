@@ -5,8 +5,8 @@
 
 import argparse
 from airtest.report.report import main as report_main
-from airtest.utils.compat import decode_path, script_dir_name
 from airtest.report.report import get_parger as report_parser
+from airtest.utils.compat import decode_path, script_dir_name
 import os
 import time
 import subprocess
@@ -16,11 +16,14 @@ import platform
 
 LOGDIR = "log"
 if __name__ == "__main__":
+    import os
     import sys
+    # add the path of AirtestIDE to sys.path
+    sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     ap = argparse.ArgumentParser()
     ap = report_parser(ap)
     args = ap.parse_args(sys.argv[1:])
-
+    
     #----- S.Dan ---------------------
     path, name = script_dir_name(args.script)
     log_root = decode_path(args.log_root) or decode_path(os.path.join(path, LOGDIR))
@@ -42,4 +45,3 @@ if __name__ == "__main__":
     #----- S.Dan ---------------------
 
     report_main(args)
-

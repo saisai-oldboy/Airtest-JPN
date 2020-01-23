@@ -31,10 +31,10 @@
 
     <div class="container-fluid">
       <div class="row">
-
+        
         <div id="main" class="main col-md-12">
           <div id="back_multi"></div>
-          <h1 class="title">{{info.title}}</h1>
+          <h1 class="title"><img src="{{static_root}}image/Recruit.png"> {{info.title}}</h1>
           {% if not steps %}
           <h2 lang="en" class="empty-report">I am sorry, this log file is empty! </h2>
           {% endif %}
@@ -46,7 +46,7 @@
                   <img id='result-img' />
                 </div>
                 <div class="info-right">
-                  <div class="info-title"><span lang='en'>{{info.title}}</span><span lang='en'>Report</span>
+                  <div class="info-title"><span lang='en'>{{info.title}} </span><span lang='en'>Report</span>
                     <label id='result-desc' lang="en"></label>
                   </div>
                   <div class="info-content">
@@ -62,6 +62,26 @@
                       <span class="info-name" lang="en">Time: </span>
                       <span class="info-value duration">xxx</span>
                     </div>
+                    {% if console %}
+                    <div class="info-console">
+                      <span class="info-name" lang="en">Console: </span>
+                      <img id='show-console' src="{{static_root}}image/console_normal.svg" /></a>
+                      <div id='console' class="mask hide">
+                        <div class="hljs content">
+                          <img id='close-console' src="{{static_root}}image/close.svg" /></a>
+                          <div class="console-content"><pre class="trace">{{console}}</pre></div>
+                        </div>
+                      </div>
+                    </div>
+                    {% endif %}
+                    {% if log %}
+                    <div class="info-log">
+                      <span class="info-name" lang="en">  Log: </span>
+                      <span class="info-value log">
+                        <a href="{{log}}" target="_blank" download="log.txt">log.txt <img src="{{static_root}}image/download_log.svg" /></a>
+                      </span>
+                    </div>
+                    {% endif %}
                   </div>
                 </div>
               </div>
@@ -89,7 +109,7 @@
                 </div>
               </div>
             </div>
-
+            
             {% if info.desc %}
             <div class="info info3">
               <div class="info-title" lang="en">Description:</div>
@@ -104,18 +124,17 @@
           </div>
           <div class="device" id='device'>
           </div>
-
+          <!-- 可以额外显示自定义模块，支持插入Html内容 -->
+          {{ extra_block|safe }}
           <div class="gallery">
             <div class="info-title"><span lang="en">Quick view</span></div>
             <div class="content">
             </div>
           </div>
 
-          <!-- 可以额外显示自定义模块，支持插入Html内容 -->
-          {{ extra_block|safe }}
           <!--单步-->
           {% if steps|length  >0 %}
-
+          
           <div class="steps">
             <div class="content">
               <div class="steps-head">
@@ -146,40 +165,33 @@
             {% endif %}
             </div>
         </div>
-
+        
       {% block footer %}
       <div class="footer">
         <div class="footer-content">
           <div class="foo">
             <div class="interfaces">
-              <a class="icon" href="https://github.com/AirtestProject/Airtest"  target="_blank">
-                <img src="{{static_root}}image/Airtest.png" alt="airtest">
-              </a>
-              <a class="icon" href="https://github.com/AirtestProject/poco"  target="_blank">
-                <img src="{{static_root}}image/poco.png" alt="Poco">
-              </a>
+              <a class="icon" href="https://github.com/AirtestProject"  target="_blank">
+                Power by:    <img src="{{static_root}}image/Airtest.png" alt="airtest">
+             </a>
             </div>
           </div>
           <div class="foo">
             <div class="apps">
-              <a class="icon ide" href="http://airtest.netease.com/"  target="_blank">
-                <img src="{{static_root}}image/AirtestIDE.png" alt="AirtestIDE">
-              </a>
-              <a class="icon" href="https://airlab.163.com/"  target="_blank">
-                <img src="{{static_root}}image/AirLab.png" alt="AirLab">
+              <a class="icon" href="https://www.catcloud.net/index.html"  target="_blank">
+                <img src="{{static_root}}image/CAT.png" alt="CAT">
               </a>
             </div>
           </div>
           <div class="foo">
             <div class="corp">
-                <img src="{{static_root}}image/netease.png" alt="NetEase">
-                <span lang="en">© 1997 - 2019 NetEase, Inc. All Rights Reserved.</span>
+              <a class="icon" href="https://www.shiftinc.jp/"  target="_blank">
+                <img src="{{static_root}}image/shift.png" alt="SHIFT">© SHIFT Inc, All Rights Reserved.
+              </a>
             </div>
           </div>
         </div>
-      </div>
-
-      </div>
+      </div> 
       {% endblock %}
       </div>
       <!-- 录屏 -->
@@ -214,11 +226,16 @@
             {% endif %}
           </div>
         </div>
+        <!-- max pic -->
+      <div id='magnify' class="mask hide">
+        <div class="content">
+        </div>
+      </div>
     </div>
 
-  <link href="{{static_root}}css/monokai_sublime.min.css" rel="stylesheet">  
-  <script src="{{static_root}}js/highlight.min.js"></script>  
+  <link href="{{static_root}}css/monokai_sublime.min.css" rel="stylesheet">
+  <script src="{{static_root}}js/highlight.min.js"></script>
   <script type="text/javascript" src="{{static_root}}js/paging.js"></script>
-  <script src="{{static_root}}js/report.js"></script>  
+  <script src="{{static_root}}js/report.js"></script>
 </body>
 </html>
